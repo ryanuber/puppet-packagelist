@@ -1,0 +1,8 @@
+name         'puppet-package-list'
+version      '0.1.0'
+source       'git://github.com/ryanuber/puppet-package-list'
+author       'Ryan Uber'
+license      'Apache'
+summary      'Package List Puppet Module'
+description  'Dynamically create package resources from encoded lists'
+project_page 'http://github.com/ryanuber/puppet-package-list'

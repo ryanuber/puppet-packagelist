@@ -1,0 +1,4145 @@
+-
+  "name":    "cyrus-sasl-lib"
+  "version": "2.1.23"
+  "release": "13.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ncurses"
+  "version": "5.7"
+  "release": "3.20090208.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "util-linux-ng"
+  "version": "2.17.2"
+  "release": "12.4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "e2fsprogs-libs"
+  "version": "1.41.12"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mod_ssl"
+  "version": "2.2.15"
+  "release": "15.el6.centos.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libvisual"
+  "version": "0.4.0"
+  "release": "9.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "usermode"
+  "version": "1.102"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "compat-db43"
+  "version": "4.3.29"
+  "release": "15.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libnfnetlink"
+  "version": "1.0.0"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "audit-libs-python"
+  "version": "2.1.3"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libss"
+  "version": "1.41.12"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "jwhois"
+  "version": "4.0"
+  "release": "19.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcanberra-gtk2"
+  "version": "0.22"
+  "release": "1.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libevent"
+  "version": "1.4.13"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nano"
+  "version": "2.0.9"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "setools-libs-python"
+  "version": "3.3.7"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXt"
+  "version": "1.0.7"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "talk"
+  "version": "0.17"
+  "release": "34.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libproxy-python"
+  "version": "0.3.0"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "librdmacm"
+  "version": "1.0.14.1"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tree"
+  "version": "1.5.3"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pygobject2"
+  "version": "2.20.0"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libpcap"
+  "version": "1.0.0"
+  "release": "6.20091201git117cb5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dos2unix"
+  "version": "3.1"
+  "release": "37.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl"
+  "version": "5.10.1"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-thread"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libidn"
+  "version": "1.18"
+  "release": "2.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "cups"
+  "version": "1.4.2"
+  "release": "44.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "librelp"
+  "version": "0.1.1"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcap"
+  "version": "2.16"
+  "release": "5.5.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "crda"
+  "version": "1.1.1_2010.11.22"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libjpeg"
+  "version": "6b"
+  "release": "46.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "apr-devel"
+  "version": "1.3.9"
+  "release": "3.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libsoup"
+  "version": "2.28.2"
+  "release": "1.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libsepol"
+  "version": "2.0.41"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libidn-devel"
+  "version": "1.18"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "udisks"
+  "version": "1.0.1"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dbus-glib"
+  "version": "0.86"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "glibc-devel"
+  "version": "2.12"
+  "release": "1.47.el6_2.5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gnome-bluetooth"
+  "version": "2.28.6"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "diffutils"
+  "version": "2.8.1"
+  "release": "28.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libX11-devel"
+  "version": "1.3"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "automake"
+  "version": "1.11.1"
+  "release": "1.2.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libgomp"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pixman-devel"
+  "version": "0.18.4"
+  "release": "1.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openldap-devel"
+  "version": "2.4.23"
+  "release": "20.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "setools-libs"
+  "version": "3.3.7"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libstdc++-devel"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cryptsetup-luks-libs"
+  "version": "1.2.0"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libuuid"
+  "version": "2.17.2"
+  "release": "12.4.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libpcap-devel"
+  "version": "1.0.0"
+  "release": "6.20091201git117cb5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "redhat-lsb-printing"
+  "version": "4.0"
+  "release": "3.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "bc"
+  "version": "1.06.95"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam_ccreds"
+  "version": "3"
+  "release": "5"
+  "arch":    "i386 CentOS"
+-
+  "name":    "mailx"
+  "version": "12.4"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-Module-Pluggable"
+  "version": "3.90"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ORBit2"
+  "version": "2.14.17"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openssl098e"
+  "version": "0.9.8e"
+  "release": "17.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openssh-clients"
+  "version": "5.3p1"
+  "release": "70.el6_2.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "syslinux"
+  "version": "4.02"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gd"
+  "version": "2.0.35"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rp-pppoe"
+  "version": "3.10"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tcsh"
+  "version": "6.17"
+  "release": "14.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pulseaudio-libs"
+  "version": "0.9.21"
+  "release": "13.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "yum-utils"
+  "version": "1.1.30"
+  "release": "10.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "specspo"
+  "version": "13"
+  "release": "1.el5.centos"
+  "arch":    "noarch CentOS"
+-
+  "name":    "acl"
+  "version": "2.2.49"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "less"
+  "version": "436"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "wireless-tools"
+  "version": "29"
+  "release": "5.1.1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "boost-serialization"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gnupg2"
+  "version": "2.0.14"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-ExtUtils-ParseXS"
+  "version": "2.2003.0"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mingetty"
+  "version": "1.08"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "docbook-style-xsl"
+  "version": "1.75.2"
+  "release": "6.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libgpg-error"
+  "version": "1.7"
+  "release": "4.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "jpackage-utils"
+  "version": "1.7.5"
+  "release": "3.12.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "device-mapper-event-libs"
+  "version": "1.02.66"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libvolume_id"
+  "version": "095"
+  "release": "14.24.el5"
+  "arch":    "i386 CentOS"
+-
+  "name":    "db4"
+  "version": "4.7.25"
+  "release": "16.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "php-cli"
+  "version": "5.3.3"
+  "release": "14.el6_3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tcpdump"
+  "version": "4.0.0"
+  "release": "3.20090921gitdf3cb4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXdmcp"
+  "version": "1.0.3"
+  "release": "1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "fontconfig-devel"
+  "version": "2.8.0"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ca-certificates"
+  "version": "2010.63"
+  "release": "3.el6_1.5"
+  "arch":    "noarch CentOS"
+-
+  "name":    "pam_smb"
+  "version": "1.1.7"
+  "release": "7.2.1"
+  "arch":    "i386 CentOS"
+-
+  "name":    "libXrandr"
+  "version": "1.3.0"
+  "release": "4.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "texlive-dviutils"
+  "version": "2007"
+  "release": "56.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tzdata"
+  "version": "2011l"
+  "release": "4.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "pixman"
+  "version": "0.18.4"
+  "release": "1.el6_0.1"
+  "arch":    "i686 CentOS"
+-
+  "name":    "ruby-rdoc"
+  "version": "1.8.7.352"
+  "release": "7.el6_2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "trousers"
+  "version": "0.3.4"
+  "release": "4.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "poppler-data"
+  "version": "0.4.0"
+  "release": "1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "gstreamer"
+  "version": "0.10.29"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "unique"
+  "version": "1.1.4"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "zlib"
+  "version": "1.2.3"
+  "release": "27.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pinentry"
+  "version": "0.7.6"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libuser"
+  "version": "0.56.13"
+  "release": "4.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "audit-libs"
+  "version": "2.1.3"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xcb-util"
+  "version": "0.3.6"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xorg-x11-xfs"
+  "version": "1.0.2"
+  "release": "5.el5_6.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam"
+  "version": "1.1.1"
+  "release": "10.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libSM"
+  "version": "1.1.0"
+  "release": "7.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam_passwdqc"
+  "version": "1.0.5"
+  "release": "6.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "bind-libs"
+  "version": "9.7.3"
+  "release": "8.P3.el6_2.3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgpg-error"
+  "version": "1.7"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pakchois"
+  "version": "0.4"
+  "release": "3.2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "beecrypt"
+  "version": "4.1.2"
+  "release": "10.1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rpm-libs"
+  "version": "4.8.0"
+  "release": "19.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libibverbs"
+  "version": "1.1.5"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libsemanage"
+  "version": "2.0.43"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gnome-keyring"
+  "version": "2.28.2"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libtool-ltdl"
+  "version": "2.2.6"
+  "release": "15.5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "iptstate"
+  "version": "2.2.2"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ypbind"
+  "version": "1.20.4"
+  "release": "29.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libfontenc"
+  "version": "1.0.5"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nc"
+  "version": "1.84"
+  "release": "22.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rpm-devel"
+  "version": "4.8.0"
+  "release": "19.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXrender"
+  "version": "0.9.5"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "amtu"
+  "version": "1.0.8"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "python-urlgrabber"
+  "version": "3.9.1"
+  "release": "8.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libXpm"
+  "version": "3.5.8"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "squashfs-tools"
+  "version": "4.0"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "python-devel"
+  "version": "2.6.6"
+  "release": "29.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXdmcp"
+  "version": "1.0.3"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "traceroute"
+  "version": "2.0.14"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "scons"
+  "version": "2.0.1"
+  "release": "1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libXres"
+  "version": "1.0.4"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss-softokn"
+  "version": "3.12.9"
+  "release": "11.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "numactl"
+  "version": "2.0.3"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "lcms-libs"
+  "version": "1.19"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libaio"
+  "version": "0.3.107"
+  "release": "10.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "kbd"
+  "version": "1.15"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "zlib"
+  "version": "1.2.3"
+  "release": "27.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "zlib-devel"
+  "version": "1.2.3"
+  "release": "27.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cvs"
+  "version": "1.11.23"
+  "release": "11.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "freetype"
+  "version": "2.3.11"
+  "release": "6.el6_1.8"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "elfutils-devel"
+  "version": "0.152"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "qt-x11"
+  "version": "4.6.2"
+  "release": "20.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "shadow-utils"
+  "version": "4.1.4.2"
+  "release": "13.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcom_err-devel"
+  "version": "1.41.12"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "avahi-glib"
+  "version": "0.6.25"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sqlite"
+  "version": "3.6.20"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "keyutils-libs-devel"
+  "version": "1.4"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libproxy-bin"
+  "version": "0.3.0"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tar"
+  "version": "1.23"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXext-devel"
+  "version": "1.1"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-CGI"
+  "version": "3.51"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libtiff"
+  "version": "3.9.4"
+  "release": "1.el6_0.3"
+  "arch":    "i686 CentOS"
+-
+  "name":    "nss-softokn-devel"
+  "version": "3.12.9"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sinjdoc"
+  "version": "0.5"
+  "release": "9.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "iptables"
+  "version": "1.4.7"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gnutls-devel"
+  "version": "2.8.5"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss_ldap"
+  "version": "253"
+  "release": "37.el5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "foomatic-db-ppds"
+  "version": "4.0"
+  "release": "7.20091126.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "iproute"
+  "version": "2.6.32"
+  "release": "17.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "yajl-devel"
+  "version": "1.0.7"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-Pod-Simple"
+  "version": "3.13"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "keyutils"
+  "version": "1.4"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "apr-util-ldap"
+  "version": "1.3.9"
+  "release": "3.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openmpi-devel"
+  "version": "1.5.3"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libxslt"
+  "version": "1.1.26"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "module-init-tools"
+  "version": "3.9"
+  "release": "17.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "oddjob"
+  "version": "0.30"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "environment-modules"
+  "version": "3.2.7b"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libesmtp"
+  "version": "1.0.4"
+  "release": "15.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "lm_sensors"
+  "version": "3.1.1"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libmng"
+  "version": "1.0.10"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "trousers"
+  "version": "0.3.4"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ecryptfs-utils"
+  "version": "82"
+  "release": "6.el6_1.3"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libedit"
+  "version": "2.11"
+  "release": "4.20080712cvs.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "curl"
+  "version": "7.19.7"
+  "release": "26.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-ExtUtils-MakeMaker"
+  "version": "6.55"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openjpeg-libs"
+  "version": "1.3"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "redhat-lsb"
+  "version": "4.0"
+  "release": "3.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "speex"
+  "version": "1.2"
+  "release": "0.12.rc1.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sound-theme-freedesktop"
+  "version": "0.7"
+  "release": "3.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "pango-devel"
+  "version": "1.28.1"
+  "release": "3.el6_0.5.1.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pcsc-lite-libs"
+  "version": "1.5.2"
+  "release": "6.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "tk"
+  "version": "8.5.7"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "neon"
+  "version": "0.29.3"
+  "release": "1.2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "php-xml"
+  "version": "5.3.3"
+  "release": "14.el6_3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "audit-libs"
+  "version": "2.1.3"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "stunnel"
+  "version": "4.29"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libxml2-devel"
+  "version": "2.7.6"
+  "release": "4.el6_2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXfixes"
+  "version": "4.0.4"
+  "release": "1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "ghostscript-fonts"
+  "version": "5.50"
+  "release": "23.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "kernel-headers"
+  "version": "2.6.32"
+  "release": "220.4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "compat-readline5"
+  "version": "5.2"
+  "release": "17.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "expat"
+  "version": "2.0.1"
+  "release": "9.1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libevent-devel"
+  "version": "1.4.13"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "texlive-texmf-errata-dvips"
+  "version": "2007"
+  "release": "7.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "cppunit-devel"
+  "version": "1.12.1"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "obexd"
+  "version": "0.19"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgcj"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "man-pages"
+  "version": "3.22"
+  "release": "17.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "eggdbus"
+  "version": "0.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libssh2"
+  "version": "1.2.2"
+  "release": "7.el6_1.1"
+  "arch":    "i686 CentOS"
+-
+  "name":    "ncurses-libs"
+  "version": "5.7"
+  "release": "3.20090208.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "iw"
+  "version": "0.9.17"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openssl-devel"
+  "version": "1.0.0"
+  "release": "20.el6_2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tcp_wrappers-libs"
+  "version": "7.6"
+  "release": "57.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ppl"
+  "version": "0.10.2"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam_pkcs11"
+  "version": "0.6.2"
+  "release": "11.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "upstart"
+  "version": "0.6.5"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gmp"
+  "version": "4.3.1"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam_pkcs11"
+  "version": "0.6.2"
+  "release": "11.1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "smp_utils"
+  "version": "0.94"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libattr"
+  "version": "2.4.44"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "policycoreutils"
+  "version": "2.0.83"
+  "release": "19.18.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "hdparm"
+  "version": "9.16"
+  "release": "3.4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libudev"
+  "version": "147"
+  "release": "2.40.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "deltarpm"
+  "version": "3.5"
+  "release": "0.5.20090913git.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "bison"
+  "version": "2.4.1"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sysvinit-tools"
+  "version": "2.87"
+  "release": "4.dsf.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "python-iniparse"
+  "version": "0.3.1"
+  "release": "2.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "lsof"
+  "version": "4.82"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libxcb"
+  "version": "1.5"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "parted"
+  "version": "2.1"
+  "release": "17.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ntsysv"
+  "version": "1.3.47"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXtst"
+  "version": "1.0.99.2"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "byacc"
+  "version": "1.9.20070509"
+  "release": "6.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-system"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gamin-python"
+  "version": "0.1.10"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rdate"
+  "version": "1.4"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "lm_sensors-libs"
+  "version": "3.1.1"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "doxygen"
+  "version": "1.6.1"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "python-setuptools"
+  "version": "0.6.10"
+  "release": "3.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libutempter"
+  "version": "1.1.5"
+  "release": "4.1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "slang"
+  "version": "2.2.1"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libproxy"
+  "version": "0.3.0"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cups-libs"
+  "version": "1.4.2"
+  "release": "44.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libart_lgpl"
+  "version": "2.3.20"
+  "release": "5.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cyrus-sasl-devel"
+  "version": "2.1.23"
+  "release": "13.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nspr-devel"
+  "version": "4.8.8"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "bash"
+  "version": "4.1.2"
+  "release": "8.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gettext"
+  "version": "0.17"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXdmcp-devel"
+  "version": "1.0.3"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libsepol"
+  "version": "2.0.41"
+  "release": "4.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "phonon-backend-gstreamer"
+  "version": "4.6.2"
+  "release": "20.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xmlrpc-c"
+  "version": "1.16.24"
+  "release": "1206.1840.el5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgcrypt-devel"
+  "version": "1.4.5"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "glib2"
+  "version": "2.22.5"
+  "release": "6.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "gvfs"
+  "version": "1.4.3"
+  "release": "12.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "e2fsprogs-devel"
+  "version": "1.41.12"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cpio"
+  "version": "2.10"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "device-mapper-libs"
+  "version": "1.02.66"
+  "release": "6.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libXxf86vm-devel"
+  "version": "1.1.0"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nspr"
+  "version": "4.8.8"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "xmltex"
+  "version": "20020625"
+  "release": "16.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "file-devel"
+  "version": "5.04"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "net-tools"
+  "version": "1.60"
+  "release": "109.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pulseaudio"
+  "version": "0.9.21"
+  "release": "13.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "fbset"
+  "version": "2.1"
+  "release": "22"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mkbootdisk"
+  "version": "1.5.5"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libutempter"
+  "version": "1.1.5"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "foomatic-db"
+  "version": "4.0"
+  "release": "7.20091126.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "nss_ldap"
+  "version": "253"
+  "release": "37.el5"
+  "arch":    "i386 CentOS"
+-
+  "name":    "bzip2-devel"
+  "version": "1.0.5"
+  "release": "7.el6_0"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "vim-minimal"
+  "version": "7.2.411"
+  "release": "1.6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "texlive-texmf-latex"
+  "version": "2007"
+  "release": "38.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "fontconfig"
+  "version": "2.8.0"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXfont"
+  "version": "1.4.1"
+  "release": "2.el6_1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gettext-devel"
+  "version": "0.17"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-libs"
+  "version": "5.10.1"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "setools-libs-tcl"
+  "version": "3.3.7"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dnsmasq"
+  "version": "2.48"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "redhat-logos"
+  "version": "60.0.14"
+  "release": "10.el6.centos"
+  "arch":    "noarch CentOS"
+-
+  "name":    "elfutils"
+  "version": "0.152"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "logwatch"
+  "version": "7.3.6"
+  "release": "49.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "rpcbind"
+  "version": "0.2.0"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openobex"
+  "version": "1.4"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "numactl"
+  "version": "2.0.3"
+  "release": "9.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "poppler"
+  "version": "0.12.4"
+  "release": "3.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-signals"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-Test-Simple"
+  "version": "0.92"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dvipng"
+  "version": "1.11"
+  "release": "3.2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libthai"
+  "version": "0.1.12"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "texlive"
+  "version": "2007"
+  "release": "56.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gnutls"
+  "version": "2.8.5"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libxml2"
+  "version": "2.7.6"
+  "release": "4.el6_2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pinfo"
+  "version": "0.6.9"
+  "release": "12.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libattr"
+  "version": "2.4.44"
+  "release": "7.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "php-pdo"
+  "version": "5.3.3"
+  "release": "14.el6_3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "subversion"
+  "version": "1.6.11"
+  "release": "2.el6_1.4"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nscd"
+  "version": "2.12"
+  "release": "1.47.el6_2.5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libX11"
+  "version": "1.3"
+  "release": "2.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "perl-ExtUtils-Embed"
+  "version": "1.28"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "texlive-texmf-errata"
+  "version": "2007"
+  "release": "7.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "dvipdfm"
+  "version": "0.13.2d"
+  "release": "41.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXdamage"
+  "version": "1.1.2"
+  "release": "1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "iso-codes"
+  "version": "3.16"
+  "release": "2.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "cracklib"
+  "version": "2.8.16"
+  "release": "4.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "nss-softokn-freebl"
+  "version": "3.12.9"
+  "release": "11.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "cppunit"
+  "version": "1.12.1"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rootfiles"
+  "version": "8.1"
+  "release": "6.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "gnome-bluetooth-libs"
+  "version": "2.28.6"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "setools-console"
+  "version": "3.3.7"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libstdc++"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cracklib-dicts"
+  "version": "2.8.16"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "portreserve"
+  "version": "0.0.4"
+  "release": "4.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libjpeg"
+  "version": "6b"
+  "release": "46.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam_krb5"
+  "version": "2.3.11"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libtheora"
+  "version": "1.1.0"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xz-libs"
+  "version": "4.999.9"
+  "release": "0.3.beta.20091007git.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcap"
+  "version": "2.16"
+  "release": "5.5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tftp"
+  "version": "0.49"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "keyutils-libs"
+  "version": "1.4"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "httpd-devel"
+  "version": "2.2.15"
+  "release": "15.el6.centos.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libacl"
+  "version": "2.2.49"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pkinit-nss"
+  "version": "0.7.6"
+  "release": "1.el5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libtiff"
+  "version": "3.9.4"
+  "release": "1.el6_0.3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tcl"
+  "version": "8.5.7"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libogg"
+  "version": "1.1.4"
+  "release": "2.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "elfutils-libs"
+  "version": "0.152"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "hesiod"
+  "version": "3.1.0"
+  "release": "19.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libX11"
+  "version": "1.3"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXrandr"
+  "version": "1.3.0"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXcursor"
+  "version": "1.1.10"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libvorbis"
+  "version": "1.2.3"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gamin"
+  "version": "0.1.10"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pax"
+  "version": "3.4"
+  "release": "10.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-filesystem"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-regex"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "newt"
+  "version": "0.52.11"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libasyncns"
+  "version": "0.8"
+  "release": "1.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgfortran"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libvolume_id"
+  "version": "095"
+  "release": "14.24.el5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcom_err"
+  "version": "1.41.12"
+  "release": "11.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "info"
+  "version": "4.13a"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gawk"
+  "version": "3.1.7"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libselinux"
+  "version": "2.0.94"
+  "release": "5.2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "atk"
+  "version": "1.28.0"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "freetype"
+  "version": "2.3.11"
+  "release": "6.el6_1.8"
+  "arch":    "i686 CentOS"
+-
+  "name":    "procps"
+  "version": "3.2.8"
+  "release": "21.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "m4"
+  "version": "1.4.13"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "lua"
+  "version": "5.1.4"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss-util"
+  "version": "3.12.10"
+  "release": "2.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "dbus"
+  "version": "1.2.24"
+  "release": "5.el6_1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "centos-release-notes"
+  "version": "5.6"
+  "release": "0"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "patch"
+  "version": "2.6"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "keyutils-libs"
+  "version": "1.4"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "pam_ccreds"
+  "version": "3"
+  "release": "5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ed"
+  "version": "1.1"
+  "release": "3.3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss-softokn"
+  "version": "3.12.9"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "which"
+  "version": "2.19"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "yum-updatesd"
+  "version": "0.9"
+  "release": "2.el5"
+  "arch":    "noarch CentOS"
+-
+  "name":    "ifd-egate"
+  "version": "0.05"
+  "release": "15"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mpi-selector"
+  "version": "1.0.2"
+  "release": "1.el5"
+  "arch":    "noarch CentOS"
+-
+  "name":    "pciutils"
+  "version": "3.1.7"
+  "release": "3.el5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "python-simplejson"
+  "version": "2.0.9"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libicu"
+  "version": "4.2.1"
+  "release": "9.1.el6_2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "krb5-libs"
+  "version": "1.9"
+  "release": "22.el6_2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "lvm2"
+  "version": "2.02.87"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "php"
+  "version": "5.3.3"
+  "release": "14.el6_3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libxml2-python"
+  "version": "2.7.6"
+  "release": "4.el6_2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "php-mbstring"
+  "version": "5.3.3"
+  "release": "14.el6_3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "net-snmp-libs"
+  "version": "5.5"
+  "release": "37.el6_2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgcc"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libFS"
+  "version": "1.0.0"
+  "release": "3.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "basesystem"
+  "version": "10.0"
+  "release": "4.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "perl-Git"
+  "version": "1.7.1"
+  "release": "2.el6_0.1"
+  "arch":    "noarch CentOS"
+-
+  "name":    "ncurses-base"
+  "version": "5.7"
+  "release": "3.20090208.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libX11-common"
+  "version": "1.3"
+  "release": "2.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "ruby-libs"
+  "version": "1.8.7.352"
+  "release": "7.el6_2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rubygem-rake"
+  "version": "0.8.7"
+  "release": "2.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "texlive-texmf-errata-fonts"
+  "version": "2007"
+  "release": "7.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "ruby-devel"
+  "version": "1.8.7.352"
+  "release": "7.el6_2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "kbd-misc"
+  "version": "1.15"
+  "release": "11.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libXaw"
+  "version": "1.0.6"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgcc"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "chkconfig"
+  "version": "1.3.47"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcom_err"
+  "version": "1.41.12"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libpng"
+  "version": "1.2.46"
+  "release": "1.el6_1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "chkfontpath"
+  "version": "1.10.1"
+  "release": "1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "elfutils-libelf"
+  "version": "0.152"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "expat"
+  "version": "2.0.1"
+  "release": "9.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libnih"
+  "version": "1.0.1"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam-devel"
+  "version": "1.1.1"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gc"
+  "version": "7.1"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "python"
+  "version": "2.6.6"
+  "release": "29.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "plymouth-core-libs"
+  "version": "0.8.3"
+  "release": "24.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "fipscheck-lib"
+  "version": "1.2.0"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "plpa-libs"
+  "version": "1.3.2"
+  "release": "2.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rpm-python"
+  "version": "4.8.0"
+  "release": "19.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libaio"
+  "version": "0.3.107"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "polkit"
+  "version": "0.96"
+  "release": "2.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libnetfilter_conntrack"
+  "version": "0.0.100"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-python"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dump"
+  "version": "0.4"
+  "release": "0.6.b42.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "yp-tools"
+  "version": "2.9"
+  "release": "12.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ftp"
+  "version": "0.17"
+  "release": "51.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "python-deltarpm"
+  "version": "3.5"
+  "release": "0.5.20090913git.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "irqbalance"
+  "version": "0.55"
+  "release": "29.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rtkit"
+  "version": "0.5"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libhugetlbfs"
+  "version": "2.12"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gdb"
+  "version": "7.2"
+  "release": "50.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "acpid"
+  "version": "1.0.10"
+  "release": "2.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libsemanage-python"
+  "version": "2.0.43"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "telnet"
+  "version": "0.17"
+  "release": "47.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "system-config-firewall-base"
+  "version": "1.2.27"
+  "release": "5.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "rsh"
+  "version": "0.17"
+  "release": "60.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dracut-kernel"
+  "version": "004"
+  "release": "256.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "eject"
+  "version": "2.1.5"
+  "release": "17.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dbus-python"
+  "version": "0.83.0"
+  "release": "6.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "finger"
+  "version": "0.17"
+  "release": "39.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "setools"
+  "version": "3.3.7"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXcomposite"
+  "version": "0.4.1"
+  "release": "2.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "grub"
+  "version": "0.97"
+  "release": "75.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss_db"
+  "version": "2.2.3"
+  "release": "0.3.pre1.el6_1.1"
+  "arch":    "i686 CentOS"
+-
+  "name":    "device-mapper"
+  "version": "1.02.66"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "compat-db43"
+  "version": "4.3.29"
+  "release": "15.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "compat-openmpi"
+  "version": "1.4.3"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gnutls"
+  "version": "2.8.5"
+  "release": "4.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "sendmail"
+  "version": "8.14.4"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libhugetlbfs"
+  "version": "2.12"
+  "release": "2.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "bluez"
+  "version": "4.66"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libpng-devel"
+  "version": "1.2.46"
+  "release": "1.el6_1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "glib2-devel"
+  "version": "2.22.5"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "elfutils-libelf-devel"
+  "version": "0.152"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cronie-anacron"
+  "version": "1.4.4"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss-util-devel"
+  "version": "3.12.10"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mesa-libGL"
+  "version": "7.11"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libsepol-devel"
+  "version": "2.0.41"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mdadm"
+  "version": "3.2.2"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgpg-error-devel"
+  "version": "1.7"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "plymouth"
+  "version": "0.8.3"
+  "release": "24.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gcc"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gvfs-obexftp"
+  "version": "1.4.3"
+  "release": "12.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gcc-gfortran"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "texlive-utils"
+  "version": "2007"
+  "release": "56.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXpm-devel"
+  "version": "3.5.8"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "autoconf"
+  "version": "2.63"
+  "release": "5.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libXdamage-devel"
+  "version": "1.1.2"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "kernel"
+  "version": "2.6.32"
+  "release": "220.4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sqlite-devel"
+  "version": "3.6.20"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "redhat-lsb-graphics"
+  "version": "4.0"
+  "release": "3.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tcl-devel"
+  "version": "8.5.7"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ecj"
+  "version": "3.4.2"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gcc-c++"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pulseaudio-module-bluetooth"
+  "version": "0.9.21"
+  "release": "13.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "unixODBC-devel"
+  "version": "2.2.14"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "passivetex"
+  "version": "1.25"
+  "release": "11.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libdbi-devel"
+  "version": "0.8.3"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "foomatic"
+  "version": "4.0.4"
+  "release": "1.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xz-devel"
+  "version": "4.999.9"
+  "release": "0.3.beta.20091007git.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-YAML-Syck"
+  "version": "1.07"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nfs-utils-lib"
+  "version": "1.1.5"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-URI"
+  "version": "1.40"
+  "release": "2.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libIDL"
+  "version": "0.8.13"
+  "release": "2.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "coreutils"
+  "version": "8.4"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "autofs"
+  "version": "5.0.5"
+  "release": "39.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "aspell"
+  "version": "0.60.6"
+  "release": "12.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openssl"
+  "version": "1.0.0"
+  "release": "20.el6_2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openssh-server"
+  "version": "5.3p1"
+  "release": "70.el6_2.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xz-lzma-compat"
+  "version": "4.999.9"
+  "release": "0.3.beta.20091007git.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "logrotate"
+  "version": "3.7.8"
+  "release": "12.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "smartmontools"
+  "version": "5.39.1"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tmpwatch"
+  "version": "2.9.16"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libsndfile"
+  "version": "1.0.20"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "readahead"
+  "version": "1.5.6"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "MAKEDEV"
+  "version": "3.24"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "hwdata"
+  "version": "0.233"
+  "release": "7.6.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "vim-enhanced"
+  "version": "7.2.411"
+  "release": "1.6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "unzip"
+  "version": "6.0"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "opensp"
+  "version": "1.5.2"
+  "release": "12.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-graph"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcurl"
+  "version": "7.19.7"
+  "release": "26.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcurl-devel"
+  "version": "7.19.7"
+  "release": "26.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tcp_wrappers"
+  "version": "7.6"
+  "release": "57.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gzip"
+  "version": "1.3.12"
+  "release": "18.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "parted"
+  "version": "2.1"
+  "release": "17.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "gettext-libs"
+  "version": "0.17"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libsamplerate"
+  "version": "0.1.7"
+  "release": "2.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-devel"
+  "version": "5.10.1"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pth"
+  "version": "2.0.7"
+  "release": "9.3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gpgme"
+  "version": "1.1.8"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "hal-info"
+  "version": "20090716"
+  "release": "3.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libusb1"
+  "version": "1.0.3"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "t1lib"
+  "version": "5.1.2"
+  "release": "6.el6_2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "hal"
+  "version": "0.5.14"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dosfstools"
+  "version": "3.0.9"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "plymouth-scripts"
+  "version": "0.8.3"
+  "release": "24.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gpm-libs"
+  "version": "1.20.6"
+  "release": "12.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "texlive-texmf-fonts"
+  "version": "2007"
+  "release": "38.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "cups-libs"
+  "version": "1.4.2"
+  "release": "44.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "fontconfig"
+  "version": "2.8.0"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "readline"
+  "version": "6.0"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "qt3"
+  "version": "3.3.8b"
+  "release": "30.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "e2fsprogs-libs"
+  "version": "1.41.12"
+  "release": "11.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "wget"
+  "version": "1.12"
+  "release": "1.4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgudev1"
+  "version": "147"
+  "release": "2.40.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "psacct"
+  "version": "6.3.2"
+  "release": "63.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXrender"
+  "version": "0.9.5"
+  "release": "1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libXft-devel"
+  "version": "2.1.13"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXinerama"
+  "version": "1.1"
+  "release": "1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "ghostscript"
+  "version": "8.70"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "avahi-libs"
+  "version": "0.6.25"
+  "release": "11.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "tk-devel"
+  "version": "8.5.7"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libdaemon"
+  "version": "0.14"
+  "release": "1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "cairo"
+  "version": "1.8.8"
+  "release": "3.1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "db4-utils"
+  "version": "4.7.25"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXft"
+  "version": "2.1.13"
+  "release": "4.1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "gstreamer-tools"
+  "version": "0.10.29"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openldap"
+  "version": "2.4.23"
+  "release": "20.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "nss_db"
+  "version": "2.2.3"
+  "release": "0.3.pre1.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libwnck"
+  "version": "2.28.0"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcdio"
+  "version": "0.81"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "compat-openldap"
+  "version": "2.3.43"
+  "release": "2.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "cdparanoia-libs"
+  "version": "10.2"
+  "release": "5.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "passwd"
+  "version": "0.77"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXv"
+  "version": "1.0.5"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ConsoleKit-libs"
+  "version": "0.4.1"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "flac"
+  "version": "1.2.1"
+  "release": "6.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam_passwdqc"
+  "version": "1.0.5"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cyrus-sasl-plain"
+  "version": "2.1.23"
+  "release": "13.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam_krb5"
+  "version": "2.3.11"
+  "release": "9.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "compat-expat1"
+  "version": "1.95.8"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "bind-utils"
+  "version": "9.7.3"
+  "release": "8.P3.el6_2.3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sg3_utils-libs"
+  "version": "1.28"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "beecrypt-devel"
+  "version": "4.1.2"
+  "release": "10.1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "device-mapper-libs"
+  "version": "1.02.66"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "glibc-common"
+  "version": "2.12"
+  "release": "1.47.el6_2.5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pciutils-libs"
+  "version": "3.1.4"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "GConf2"
+  "version": "2.28.0"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "apr-util"
+  "version": "1.3.9"
+  "release": "3.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "attr"
+  "version": "2.4.44"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ConsoleKit"
+  "version": "0.4.1"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "avahi-libs"
+  "version": "0.6.25"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mlocate"
+  "version": "0.22.2"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "setools-gui"
+  "version": "3.3.7"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXext"
+  "version": "1.1"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cpuspeed"
+  "version": "1.5"
+  "release": "15.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nfs-utils"
+  "version": "1.2.3"
+  "release": "15.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXinerama"
+  "version": "1.1"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rdist"
+  "version": "6.1.5"
+  "release": "49.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "setuptool"
+  "version": "1.19.9"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libtdb"
+  "version": "1.2.1"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "setserial"
+  "version": "2.17"
+  "release": "25.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sos"
+  "version": "2.2"
+  "release": "17.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libXdamage"
+  "version": "1.1.2"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "hal-libs"
+  "version": "0.5.14"
+  "release": "11.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libdrm"
+  "version": "2.4.25"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "yajl"
+  "version": "1.0.7"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libtasn1"
+  "version": "2.3"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "cronie"
+  "version": "1.4.4"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss-softokn-freebl"
+  "version": "3.12.9"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "freetype-devel"
+  "version": "2.3.11"
+  "release": "6.el6_1.8"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "netpbm-progs"
+  "version": "10.47.05"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "grep"
+  "version": "2.6.3"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "texlive-texmf-dvips"
+  "version": "2007"
+  "release": "38.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "mesa-libGLU"
+  "version": "7.11"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "glib2"
+  "version": "2.22.5"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ncurses-devel"
+  "version": "5.7"
+  "release": "3.20090208.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "avahi"
+  "version": "0.6.25"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "readline"
+  "version": "6.0"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "expat-devel"
+  "version": "2.0.1"
+  "release": "9.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "texlive-latex"
+  "version": "2007"
+  "release": "56.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "psmisc"
+  "version": "22.6"
+  "release": "15.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXfixes-devel"
+  "version": "4.0.4"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "java-1.5.0-gcj"
+  "version": "1.5.0.0"
+  "release": "29.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libpng"
+  "version": "1.2.46"
+  "release": "1.el6_1"
+  "arch":    "i686 CentOS"
+-
+  "name":    "lm_sensors-devel"
+  "version": "3.1.1"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "java_cup"
+  "version": "0.10k"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "kpathsea"
+  "version": "2007"
+  "release": "56.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "readline-devel"
+  "version": "6.0"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dracut"
+  "version": "004"
+  "release": "256.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libgssglue"
+  "version": "0.1"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libibverbs-devel"
+  "version": "1.1.5"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-Date-Manip"
+  "version": "6.24"
+  "release": "1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "time"
+  "version": "1.7"
+  "release": "37.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-Pod-Escapes"
+  "version": "1.04"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "policycoreutils-python"
+  "version": "2.0.83"
+  "release": "19.18.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mtools"
+  "version": "4.0.12"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "alsa-lib"
+  "version": "1.0.22"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "microcode_ctl"
+  "version": "1.17"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "flex"
+  "version": "2.5.35"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "docbook-dtds"
+  "version": "1.0"
+  "release": "51.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "conman"
+  "version": "0.2.5"
+  "release": "2.3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "procmail"
+  "version": "3.22"
+  "release": "25.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libssh2"
+  "version": "1.2.2"
+  "release": "7.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "redhat-rpm-config"
+  "version": "9.0.3"
+  "release": "34.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "boost-iostreams"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openjade"
+  "version": "1.3.2"
+  "release": "36.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "coolkey"
+  "version": "1.1.0"
+  "release": "19.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pixman"
+  "version": "0.18.4"
+  "release": "1.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "audit"
+  "version": "2.1.3"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "redhat-lsb"
+  "version": "4.0"
+  "release": "3.el6.centos"
+  "arch":    "i686 CentOS"
+-
+  "name":    "ethtool"
+  "version": "2.6.33"
+  "release": "0.3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcanberra"
+  "version": "0.22"
+  "release": "1.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pango"
+  "version": "1.28.1"
+  "release": "3.el6_0.5.1.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXau"
+  "version": "1.0.5"
+  "release": "1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "gstreamer-plugins-base"
+  "version": "0.10.29"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "prelink"
+  "version": "0.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "e2fsprogs"
+  "version": "1.41.12"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "php-soap"
+  "version": "5.3.3"
+  "release": "14.el6_3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "postgresql-libs"
+  "version": "8.4.9"
+  "release": "1.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "popt"
+  "version": "1.13"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "net-snmp-devel"
+  "version": "5.5"
+  "release": "37.el6_2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXext"
+  "version": "1.1"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "urw-fonts"
+  "version": "2.4"
+  "release": "10.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "centos-release"
+  "version": "6"
+  "release": "2.el6.centos.7"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gdbm"
+  "version": "1.8.0"
+  "release": "36.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libusb"
+  "version": "0.1.12"
+  "release": "23.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "php-devel"
+  "version": "5.3.3"
+  "release": "14.el6_3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openssl"
+  "version": "1.0.0"
+  "release": "20.el6_2.1"
+  "arch":    "i686 CentOS"
+-
+  "name":    "kernel-firmware"
+  "version": "2.6.32"
+  "release": "220.4.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "php-pear"
+  "version": "1.9.4"
+  "release": "4.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "lftp"
+  "version": "4.0.9"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXmu"
+  "version": "1.0.5"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gtk2"
+  "version": "2.18.9"
+  "release": "6.el6.centos"
+  "arch":    "i686 CentOS"
+-
+  "name":    "words"
+  "version": "3.0"
+  "release": "17.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "unixODBC"
+  "version": "2.2.14"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcurl"
+  "version": "7.19.7"
+  "release": "26.el6_1.2"
+  "arch":    "i686 CentOS"
+-
+  "name":    "pkgconfig"
+  "version": "0.23"
+  "release": "9.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "vim-common"
+  "version": "7.2.411"
+  "release": "1.6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ppp"
+  "version": "2.4.5"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libICE"
+  "version": "1.0.6"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libatasmart"
+  "version": "0.17"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "screen"
+  "version": "4.0.3"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libusb"
+  "version": "0.1.12"
+  "release": "23.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dialog"
+  "version": "1.1"
+  "release": "9.20080819.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rpm"
+  "version": "4.8.0"
+  "release": "19.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "httpd"
+  "version": "2.2.15"
+  "release": "15.el6.centos.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "file-libs"
+  "version": "5.04"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libffi"
+  "version": "3.0.5"
+  "release": "3.2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "yum-metadata-parser"
+  "version": "1.1.2"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "apr"
+  "version": "1.3.9"
+  "release": "3.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "liboil"
+  "version": "0.3.16"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libselinux-python"
+  "version": "2.0.94"
+  "release": "5.2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXau"
+  "version": "1.0.5"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "crash"
+  "version": "5.1.8"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "notification-daemon"
+  "version": "0.5.0"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dmidecode"
+  "version": "2.11"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ttmkfdir"
+  "version": "3.0.9"
+  "release": "32.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "python-pycurl"
+  "version": "7.19.0"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXi"
+  "version": "1.3"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rsync"
+  "version": "3.0.6"
+  "release": "5.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tex-preview"
+  "version": "11.85"
+  "release": "10.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "mpfr"
+  "version": "2.4.1"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "unix2dos"
+  "version": "2.2"
+  "release": "35.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "zisofs-tools"
+  "version": "1.0.6"
+  "release": "3.2.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "system-config-firewall-tui"
+  "version": "1.2.27"
+  "release": "5.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libnl"
+  "version": "1.1"
+  "release": "14.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "vconfig"
+  "version": "1.9"
+  "release": "8.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "unifdef"
+  "version": "1.171"
+  "release": "5.fc6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "initscripts"
+  "version": "9.03.27"
+  "release": "1.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-date-time"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "aspell"
+  "version": "0.60.6"
+  "release": "12.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libdbi"
+  "version": "0.8.3"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libthai"
+  "version": "0.1.12"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "mcstrans"
+  "version": "0.3.1"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ncurses-libs"
+  "version": "5.7"
+  "release": "3.20090208.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "texlive-texmf"
+  "version": "2007"
+  "release": "38.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "openmpi"
+  "version": "1.5.3"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss-util"
+  "version": "3.12.10"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "db4-devel"
+  "version": "4.7.25"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "htmlview"
+  "version": "4.0.0"
+  "release": "2.el5"
+  "arch":    "noarch CentOS"
+-
+  "name":    "gnome-disk-utility-libs"
+  "version": "2.30.1"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "findutils"
+  "version": "4.4.2"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "glibc-headers"
+  "version": "2.12"
+  "release": "1.47.el6_2.5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "imake"
+  "version": "1.0.2"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "binutils"
+  "version": "2.20.51.0.2"
+  "release": "5.28.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libxcb-devel"
+  "version": "1.5"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "yum"
+  "version": "3.2.29"
+  "release": "22.el6.centos"
+  "arch":    "noarch CentOS"
+-
+  "name":    "bzip2"
+  "version": "1.0.5"
+  "release": "7.el6_0"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "elfutils-libelf-devel-static"
+  "version": "0.152"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "apr-util-devel"
+  "version": "1.3.9"
+  "release": "3.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "desktop-file-utils"
+  "version": "0.15"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "tcp_wrappers-devel"
+  "version": "7.6"
+  "release": "57.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cryptsetup-luks"
+  "version": "1.2.0"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libblkid"
+  "version": "2.17.2"
+  "release": "12.4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "redhat-menus"
+  "version": "14.0.0"
+  "release": "3.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libdrm-devel"
+  "version": "2.4.25"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libselinux-utils"
+  "version": "2.0.94"
+  "release": "5.2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openldap"
+  "version": "2.4.23"
+  "release": "20.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gcc-java"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "checkpolicy"
+  "version": "2.0.22"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cairo"
+  "version": "1.8.8"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "wireless-tools"
+  "version": "29"
+  "release": "5.1.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "iptables-ipv6"
+  "version": "1.4.7"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sgml-common"
+  "version": "0.6.3"
+  "release": "32.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "quota"
+  "version": "3.17"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "psutils"
+  "version": "1.17"
+  "release": "34.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "hicolor-icon-theme"
+  "version": "0.11"
+  "release": "1.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "irda-utils"
+  "version": "0.9.17"
+  "release": "2.fc6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "aspell-en"
+  "version": "6.0"
+  "release": "2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "createrepo"
+  "version": "0.9.8"
+  "release": "4.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "rmt"
+  "version": "0.4"
+  "release": "0.6.b42.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "groff"
+  "version": "1.18.1.4"
+  "release": "21.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ccid"
+  "version": "1.3.9"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-test"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "poppler-utils"
+  "version": "0.12.4"
+  "release": "3.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "coolkey"
+  "version": "1.1.0"
+  "release": "19.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libdaemon"
+  "version": "0.14"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "coreutils-libs"
+  "version": "8.4"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss-sysinit"
+  "version": "3.12.10"
+  "release": "17.el6_2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgcrypt"
+  "version": "1.4.5"
+  "release": "9.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "texlive-dvips"
+  "version": "2007"
+  "release": "56.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "device-mapper-event"
+  "version": "1.02.66"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "php-common"
+  "version": "5.3.3"
+  "release": "14.el6_3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cyrus-sasl-lib"
+  "version": "2.1.23"
+  "release": "13.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "usbutils"
+  "version": "003"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libxcb"
+  "version": "1.5"
+  "release": "1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "genisoimage"
+  "version": "1.1.9"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xml-common"
+  "version": "0.6.3"
+  "release": "32.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "perl-Error"
+  "version": "0.17015"
+  "release": "4.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libXi"
+  "version": "1.3"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "bwidget"
+  "version": "1.8.0"
+  "release": "5.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "foomatic-db-filesystem"
+  "version": "4.0"
+  "release": "7.20091126.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "ruby-irb"
+  "version": "1.8.7.352"
+  "release": "7.el6_2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gamin"
+  "version": "0.1.10"
+  "release": "9.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "openssl098e"
+  "version": "0.9.8e"
+  "release": "17.el6.centos"
+  "arch":    "i686 CentOS"
+-
+  "name":    "popt-devel"
+  "version": "1.13"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "grubby"
+  "version": "7.0.15"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libglade2"
+  "version": "2.6.4"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "glibc"
+  "version": "2.12"
+  "release": "1.47.el6_2.5"
+  "arch":    "i686 CentOS"
+-
+  "name":    "expect"
+  "version": "5.44.1.15"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam"
+  "version": "1.1.1"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "bzip2-libs"
+  "version": "1.0.5"
+  "release": "7.el6_0"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "startup-notification"
+  "version": "0.10"
+  "release": "2.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgcj-devel"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libuuid"
+  "version": "2.17.2"
+  "release": "12.4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libesmtp-devel"
+  "version": "1.0.4"
+  "release": "15.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "db4-cxx"
+  "version": "4.7.25"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libgcrypt"
+  "version": "1.4.5"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "httpd-tools"
+  "version": "2.2.15"
+  "release": "15.el6.centos.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "python-libs"
+  "version": "2.6.6"
+  "release": "29.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "ustr"
+  "version": "1.0.4"
+  "release": "9.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "file"
+  "version": "5.04"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "man"
+  "version": "1.6f"
+  "release": "29.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dash"
+  "version": "0.5.5.1"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "bluez-libs"
+  "version": "4.66"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "fipscheck"
+  "version": "1.2.0"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "udftools"
+  "version": "1.0.0b3"
+  "release": "12.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcap-ng"
+  "version": "0.6.4"
+  "release": "3.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libnotify"
+  "version": "0.5.0"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mcelog"
+  "version": "1.0pre3_20110718"
+  "release": "0.7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXfixes"
+  "version": "4.0.4"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pygpgme"
+  "version": "0.1"
+  "release": "18.20090824bzr68.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mtr"
+  "version": "0.75"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXxf86vm"
+  "version": "1.1.0"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-version"
+  "version": "0.77"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "symlinks"
+  "version": "1.4"
+  "release": "2.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pcsc-lite-libs"
+  "version": "1.5.2"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-devel"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sqlite"
+  "version": "3.6.20"
+  "release": "1.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "libibcm"
+  "version": "1.0.5"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "udev"
+  "version": "147"
+  "release": "2.40.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cyrus-sasl-plain"
+  "version": "2.1.23"
+  "release": "13.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "netpbm"
+  "version": "10.47.05"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cyrus-sasl"
+  "version": "2.1.23"
+  "release": "13.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xorg-x11-proto-devel"
+  "version": "7.6"
+  "release": "13.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libstdc++"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "openssh"
+  "version": "5.3p1"
+  "release": "70.el6_2.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXau-devel"
+  "version": "1.0.5"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nspr"
+  "version": "4.8.8"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mesa-dri-drivers"
+  "version": "7.11"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libselinux-devel"
+  "version": "2.0.94"
+  "release": "5.2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sed"
+  "version": "4.2.1"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libcgroup"
+  "version": "0.37"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libjpeg-devel"
+  "version": "6b"
+  "release": "46.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libidn"
+  "version": "1.18"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-String-CRC32"
+  "version": "1.4"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "bitstream-vera-fonts"
+  "version": "1.10"
+  "release": "7"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libXrender-devel"
+  "version": "0.9.5"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "make"
+  "version": "3.81"
+  "release": "19.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "perl-Test-Harness"
+  "version": "3.17"
+  "release": "119.el6_1.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss-softokn-freebl-devel"
+  "version": "3.12.9"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dbus-libs"
+  "version": "1.2.24"
+  "release": "5.el6_1"
+  "arch":    "i686 CentOS"
+-
+  "name":    "w3m"
+  "version": "0.5.2"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "elfutils-devel-static"
+  "version": "0.152"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "atk"
+  "version": "1.28.0"
+  "release": "2.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "ecryptfs-utils"
+  "version": "82"
+  "release": "6.el6_1.3"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "librelp-devel"
+  "version": "0.1.1"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "hal-libs"
+  "version": "0.5.14"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mesa-libGL-devel"
+  "version": "7.11"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cracklib"
+  "version": "2.8.16"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libtirpc"
+  "version": "0.2.1"
+  "release": "5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xmlto"
+  "version": "0.0.23"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "compat-openldap"
+  "version": "2.3.43"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xz"
+  "version": "4.999.9"
+  "release": "0.3.beta.20091007git.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mgetty"
+  "version": "1.1.36"
+  "release": "8.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pam_smb"
+  "version": "1.1.7"
+  "release": "7.2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "openib"
+  "version": "1.4.1"
+  "release": "6.el5"
+  "arch":    "noarch CentOS"
+-
+  "name":    "qt"
+  "version": "4.6.2"
+  "release": "20.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "iputils"
+  "version": "20071127"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rpm-build"
+  "version": "4.8.0"
+  "release": "19.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rsyslog"
+  "version": "4.6.2"
+  "release": "12.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "boost-wave"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libtool"
+  "version": "2.2.6"
+  "release": "15.5.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "crontabs"
+  "version": "1.10"
+  "release": "33.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "boost-program-options"
+  "version": "1.41.0"
+  "release": "11.el6_1.2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pcsc-lite"
+  "version": "1.5.2"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "qt-sqlite"
+  "version": "4.6.2"
+  "release": "20.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "zip"
+  "version": "3.0"
+  "release": "1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "pm-utils"
+  "version": "1.2.5"
+  "release": "9.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xdg-utils"
+  "version": "1.0.2"
+  "release": "17.20091016cvs.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "libtasn1"
+  "version": "2.3"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "nss"
+  "version": "3.12.10"
+  "release": "17.el6_2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXft"
+  "version": "2.1.13"
+  "release": "4.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libblkid"
+  "version": "2.17.2"
+  "release": "12.4.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "lvm2-libs"
+  "version": "2.02.87"
+  "release": "6.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "wpa_supplicant"
+  "version": "0.7.3"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libudev"
+  "version": "147"
+  "release": "2.40.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "setup"
+  "version": "2.8.14"
+  "release": "13.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "cairo-devel"
+  "version": "1.8.8"
+  "release": "3.1.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXcursor"
+  "version": "1.1.10"
+  "release": "2.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "git"
+  "version": "1.7.1"
+  "release": "2.el6_0.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "mailcap"
+  "version": "2.1.31"
+  "release": "2.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "distcache"
+  "version": "1.4.5"
+  "release": "14.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "gd-devel"
+  "version": "2.0.35"
+  "release": "10.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dbus-glib"
+  "version": "0.86"
+  "release": "5.el6"
+  "arch":    "i686 CentOS"
+-
+  "name":    "ruby"
+  "version": "1.8.7.352"
+  "release": "7.el6_2"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "rubygems"
+  "version": "1.3.7"
+  "release": "1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "texlive-texmf-errata-latex"
+  "version": "2007"
+  "release": "7.1.el6"
+  "arch":    "noarch CentOS"
+-
+  "name":    "gtk2"
+  "version": "2.18.9"
+  "release": "6.el6.centos"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "xorg-x11-font-utils"
+  "version": "7.2"
+  "release": "11.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "graphviz"
+  "version": "2.26.0"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "glibc"
+  "version": "2.12"
+  "release": "1.47.el6_2.5"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "obex-data-server"
+  "version": "0.4.3"
+  "release": "4.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cpp"
+  "version": "4.4.6"
+  "release": "3.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "dbus-libs"
+  "version": "1.2.24"
+  "release": "5.el6_1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "distcache-devel"
+  "version": "1.4.5"
+  "release": "14.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "at"
+  "version": "3.1.10"
+  "release": "43.el6_2.1"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "libXcomposite"
+  "version": "0.4.1"
+  "release": "2.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "db4"
+  "version": "4.7.25"
+  "release": "16.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "sudo"
+  "version": "1.7.4p5"
+  "release": "7.el6"
+  "arch":    "x86_64 CentOS"
+-
+  "name":    "cloog-ppl"
+  "version": "0.15.7"
+  "release": "1.2.el6"
+  "arch":    "x86_64 CentOS"
