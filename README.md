@@ -18,7 +18,11 @@ The purge option determines whether or not to purge packages that do not
 appear in your package set. It defaults to nopurge.
 
 You need to feed in one list containing a structure of package data.
-Examples follow.
+A list can be created on a live machine using the following command:
+
+    rpm -qa > /path/to/list_file.txt
+
+Examples of content possibilities follow.
 
 With versions:
 
