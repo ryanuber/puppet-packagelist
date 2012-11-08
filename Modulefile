@@ -1,4 +1,4 @@
-name         'packagelist'
+name         'ryanuber-packagelist'
 version      '0.1.1'
 source       'git://github.com/ryanuber/puppet-package-list'
 author       'Ryan Uber'
