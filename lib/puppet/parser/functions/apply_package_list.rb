@@ -1,4 +1,4 @@
-# Dynamically create package resources from encoded lists
+# Dynamically create package resources from list files
 #
 # @author    Ryan Uber <ryan@blankbmx.com>
 # @license   Apache License, Version 2.0
@@ -19,71 +19,43 @@
 
 module Puppet::Parser::Functions
   newfunction(:apply_package_list, :type => :statement, :doc =>
-    "Dynamcially creates a package resource for each element in an encoded
-    object, and ensures that each version is enforced. Any package not
-    defined in your package list will automatically generate a package
-    resource with an ensure => absent, giving you the power to define
-    exactly what you want on your system in one list and enforce it using
-    Puppet.
+    "Dynamcially creates a package resource for each element in a list, and
+    ensures that each version is enforced. Any package not defined in your
+    package list will automatically generate a package resource with an
+    ensure => absent, giving you the power to define exactly what you want
+    on your system in one list and enforce it using Puppet.
 
     Basic Syntax:
-    apply_package_list('/path/to/list/file', '[encoding=yaml]', '[purge=nopurge]')
-
-    The encoding option will default to YAML if omitted, but can optionally
-    be set to JSON to decode a JSON file instead. JSON decoding requires the
-    json gem to be installed.
+    apply_package_list('/path/to/list/file', '[purge=nopurge]')
 
     The purge option determines whether or not to purge packages that do not
-    appear in your package set. It defaults to nopurge.
+    appear in your package set. It defaults to nopurge. Set it to 'purge' to
+    enable pruning, or omit it to skip the purging stage.
 
-    You need to feed in one encoded object containing a structure
-    of package data. Examples follow.
+    You need to pass in the path of a file that contains a newline-delimited
+    list of package names to apply. For each package in this list, an ensure
+    will be dynamically created to latest. This allows you to either place
+    an exact package version in (along with the name), or simply the package
+    name if you want the latest from your mirror. Example follows:
 
-    YAML:
-    -
-      name: \"kernel\"
-      version: \"2.6.32\"
-      release: \"220.4.1.el6\"
-      arch: \"x86_64\"
-    -
-      name: \"grub\"
-      version: \"0.97\"
-      release: \"75.el6\"
-      arch: \"x86_64\"
+      kernel-2.6.32-220.4.1.el6.x86_64
+      grub-0.97-75.el6.x86_64
+      vim-enhanced
 
-    JSON:
-    [
-      {
-        \"name\":\"kernel\",
-        \"version\":\"2.6.32\",
-        \"release\":\"220.4.1.el6\",
-        \"arch\":\"x86_64\"
-      },
-      {
-        \"name\":\"grub\",
-        \"version\":\"0.97\",
-        \"release\":\"75.el6\",
-        \"arch\":\"x86_64\"
-      }
-    ]
+    This would ensure that kernel and grub matched the versions specified, and
+    the latest vim-enhanced from your configured mirrors.
 
-    This would ensure that kernel and grub matched the versions specified.
-    You can also use keywords rather than versions by passing in an empty
-    release, and using the keyword you want in the version section. For
-    example, you could pass an empty release and \"latest\" as the version.
-    This would ensure that the latest version of the package is installed.
+    An easy way to create a package list for an entire system is using RPM
+    directly. Examples follow.
 
-    The architecture is not required on any package. However, if present,
-    it does affect the way this function operates. If a non-null value
-    other than the rare '(none)' architecture type is specified, the
-    arch will be appended to the package name, creating a way for puppet
-    to enforce architecture.
+    With versions:
+    rpm -qa > /path/to/list/file
 
-    Limitations:
-    1) When checking installed packages against the provided list, only the
-    name is validated. If there are multiple versions of an RPM installed,
-    versions other than what is specified in your list would not be flagged
-    for removal.
+    Without versions (to get latest):
+    rpm -qa --qf='%{name}\\n' > /path/to/list/file
+
+    Limitations
+    1) Inability to pass plain package names (without version/arch/release etc) with the "purge" option
     2) Only RPM-based operating systems are supported at this time.") do |args|
 
     if args.length == 0
@@ -91,51 +63,34 @@ module Puppet::Parser::Functions
     end
 
     file  = args[0]
-    type  = args.length > 1 ? args[1] : 'yaml'
-    purge = args.length > 2 ? args[2] : 'nopurge'
+    purge = args.length > 1 ? args[1] : 'nopurge'
 
     if not File.exists?(file)
       raise Puppet::ParseError, "File '#{file}' not found during apply_package_list()"
     end
 
-    if type == 'yaml'
-      require 'yaml'
-      packages = YAML.load_file(file)
-    elsif type == 'json'
-      require 'json'
-      packages = JSON.parse(open(file).read)
-    else
-      raise Puppet::ParseError, "Encoding type '#{type}' not recognized during apply_package_list()"
-    end
+    packages = File.read(file).split("\n")
 
     if not ['purge', 'nopurge'].include?(purge)
       raise Puppet::ParseError, "Invalid argument '#{purge}' during apply_package_list()"
     end
 
     os = lookupvar('osfamily')
-    if not ['RedHat', 'Debian'].include?(os)
+    if not ['RedHat'].include?(os)
       raise Puppet::ParseError, "Unsupported operating system detected during apply_package_list()"
     end
- 
+
     allowed = Array.new
 
     packages.each do |package|
-      ['name', 'version', 'release', 'arch'].each do |index|
-        if not package.has_key?(index) or not package[index].kind_of?(String)
-          raise Puppet::ParseError, "Unrecognized package format in file '#{file}' during apply_package_list()"
-        end
-      end
-      e_name = package['name'] + ((package['arch'] != '') ? '.' + package['arch'] : '')
-      e_version = package['version'] + (package['release'] != '' ? '-' + package['release'] : '')
       catalog.add_resource Puppet::Type.type(:package).hash2resource(
-        {:name => e_name, :ensure => e_version}
+        {:name => package, :ensure => "latest"}
       )
-      allowed << package['name']
+      allowed << package
     end
 
     if purge == 'purge'
-      installed = %x(rpm -qa --qf='%{name}\n').split("\n") if os == 'RedHat'
-      installed = %x(dpkg --get-selections | awk '/install$/ {print $1}').split("\n") if os == 'Debian'
+      installed = %x(rpm -qa).split("\n") if os == 'RedHat'
       if installed == nil
         raise Puppet::ParseError, "Could not query local package database during apply_package_list()"
       end
