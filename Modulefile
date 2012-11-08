@@ -1,5 +1,5 @@
-name         'puppet-package-list'
-version      '0.1.0'
+name         'packagelist'
+version      '0.1.1'
 source       'git://github.com/ryanuber/puppet-package-list'
 author       'Ryan Uber'
 license      'Apache'
