@@ -55,7 +55,7 @@ module Puppet::Parser::Functions
     rpm -qa --qf='%{name}\\n' > /path/to/list/file
 
     Limitations
-    1) Inability to pass plain package names (without version/arch/release etc) with the "purge" option
+    1) Inability to pass plain package names (without version/arch/release etc) with the \"purge\" option
     2) Only RPM-based operating systems are supported at this time.") do |args|
 
     if args.length == 0
