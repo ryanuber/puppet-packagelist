@@ -59,7 +59,10 @@ Puppet::Type.newtype(:packagelist) do
     2) Only RPM-based operating systems are supported at this time."
 
   def self.title_patterns
-    [ [ /^(.*?)\/+\Z/m, [ [ :source ] ] ], [ /^(.*)\Z/m, [ [ :name ] ] ] ]
+    [
+      [ /^((^\/(.*)\/?)*)\Z/m, [ [ :source ], [ :name ] ] ],
+      [ /^(.*)\Z/m, [ :name ] ]
+    ]
   end
 
   newparam(:purge, :boolean => true) do
@@ -68,11 +71,15 @@ Puppet::Type.newtype(:packagelist) do
   end
 
   newparam(:name) do
+    validate do |value|
+      puts "name=#{value}"
+    end
     isnamevar
   end
 
   newparam(:source) do
     validate do |value|
+      puts "source=#{value}"
       unless Puppet::Util.absolute_path?(value)
         fail Puppet::Error, "Source file path must be fully qualified, not '#{value}'"
       end
@@ -103,9 +110,9 @@ Puppet::Type.newtype(:packagelist) do
   end
 
   def generate
-    if self.value(:packages) != nil
+    if self.value(:packages)
       packages = self.value(:packages)
-    elsif self.value(:source) != nil
+    elsif self.value(:source)
       packages = File.read(self.value(:source)).split("\n")
     end
     result = []
