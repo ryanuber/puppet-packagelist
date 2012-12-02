@@ -41,11 +41,11 @@ Puppet::Type.type(:packagelist).provide :redhat do
       # In RHEL, GPG keys show up in this output, so skip them (we really don't want
       # to uninstall imported GPG keys)
       next if package.start_with?('gpg-pubkey')
-      if not allowed_packages.include?(package)
-        # Account for packages specified by name-only in the package list
-        next if allowed_packages.include?(%x(rpm -q --qf "%{name}" #{package}))
-        result << package
-      end
+
+      # Account for packages specified by name-only in the package list
+      next if allowed_packages.include?(%x(rpm -q --qf "%{name}" #{package}))
+
+      result << package if not allowed_packages.include?(package)
     end
     result
   end
