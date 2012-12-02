@@ -2,8 +2,8 @@
 #
 # @author    Ryan Uber <ryan@blankbmx.com>
 # @license   Apache License, Version 2.0
-# @category  functions
-# @package   apply_packagelist
+# @category  modules
+# @package   packagelist
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,38 +25,55 @@ Puppet::Type.newtype(:packagelist) do
     ensure => absent, giving you the power to define exactly what you want
     on your system in one list and enforce it using Puppet.
 
-    Basic Syntax:
-    apply_packagelist('/path/to/list/file', '[purge=nopurge]')
+    For each package in a package list, an ensure will be dynamically created
+    to 'latest'. This allows you to either place an exact package version in
+    (along with the name), or simply the package name if you want the latest
+    from your mirror.
 
-    The purge option determines whether or not to purge packages that do not
-    appear in your package set. It defaults to nopurge. Set it to 'purge' to
-    enable pruning, or omit it to skip the purging stage.
+    Options
+    =======
+    source
+    Defines the path to a package list file. This option can be passed as the
+    resource name as well. This argument conflicts with the packages argument.
 
-    You need to pass in the path of a file that contains a newline-delimited
-    list of package names to apply. For each package in this list, an ensure
-    will be dynamically created to latest. This allows you to either place
-    an exact package version in (along with the name), or simply the package
-    name if you want the latest from your mirror. Example follows:
+    packages
+    A package list to pass directly in. This argument conflicts with the
+    source argument.
 
-      kernel-2.6.32-220.4.1.el6.x86_64
-      grub-0.97-75.el6.x86_64
-      vim-enhanced
+    purge
+    Whether or not to purge packages that are not present in the package list.
 
-    This would ensure that kernel and grub matched the versions specified, and
-    the latest vim-enhanced from your configured mirrors.
-
+    Creating package lists
+    ======================
     An easy way to create a package list for an entire system is using RPM
     directly. Examples follow.
 
     With versions:
-    rpm -qa > /path/to/list/file
+    rpm -qa > my-packages.lst
 
     Without versions (to get latest):
-    rpm -qa --qf='%{name}\\n' > /path/to/list/file
+    rpm -qa --qf='%{name}\\n' > my-packages.lst
+
+    Examples
+    ========
+    Keep kernel and grub at latest, don't purge other packages:
+    packagelist { 'mypackagelist': packages => [ 'kernel', 'grub' ] }
+
+    Keep kernel at a specific version, grub at latest, don't purge:
+    packagelist { 'mypackagelist': packages => [ 'kernel-2.6.32-279.el6.x86_64', 'grub' ]
+
+    Load in a packagelist from a list file (one package per line):
+    packagelist { '/root/my-packages.lst': }
+
+    Load in a packagelist file, purging anything not mentioned within it:
+    packagelist { '/root/my-packages.lst': purge => true }
+
+    Pass in a packagelist loaded from somewhere else:
+    packagelist { 'mypackagelist': packages => $packages }
 
     Limitations
-    1) Inability to pass plain package names (without version/arch/release etc) with the \"purge\" option
-    2) Only RPM-based operating systems are supported at this time."
+    ===========
+    1) Inability to pass plain package names (without version/arch/release etc) with the \"purge\" option"
 
   def self.title_patterns
     [
@@ -66,6 +83,7 @@ Puppet::Type.newtype(:packagelist) do
   end
 
   newparam(:purge, :boolean => true) do
+    desc "Purge any installed packages that are not present in the list"
     newvalues(:true, :false)
     defaultto :false
   end
@@ -78,6 +96,9 @@ Puppet::Type.newtype(:packagelist) do
   end
 
   newparam(:source) do
+    desc "The path to a package list. This can be passed as a parameter or as
+    the resource identifier. It must contain a fully-qualified path. You cannot
+    use this argument in conjunction with the 'packages' argument."
     validate do |value|
       puts "source=#{value}"
       unless Puppet::Util.absolute_path?(value)
@@ -90,6 +111,8 @@ Puppet::Type.newtype(:packagelist) do
   end
 
   newparam(:packages) do
+    desc "A packagelist. This is a simple list containing package strings. You
+    cannot use this argument in conjunction with the 'source' argument."
     validate do |value|
       unless value.kind_of?(Array)
         raise ArgumentError, "Supplied package list is not an array"
