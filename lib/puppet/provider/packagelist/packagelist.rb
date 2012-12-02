@@ -28,6 +28,7 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Puppet::Type.type(:packagelist).provide :redhat do
+  confine :osfamily => :redhat
   defaultfor :osfamily => :redhat
 
   def get_purge_list(allowed_packages)
