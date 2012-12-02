@@ -89,9 +89,6 @@ Puppet::Type.newtype(:packagelist) do
   end
 
   newparam(:name) do
-    validate do |value|
-      puts "name=#{value}"
-    end
     isnamevar
   end
 
@@ -100,7 +97,6 @@ Puppet::Type.newtype(:packagelist) do
     the resource identifier. It must contain a fully-qualified path. You cannot
     use this argument in conjunction with the 'packages' argument."
     validate do |value|
-      puts "source=#{value}"
       unless Puppet::Util.absolute_path?(value)
         fail Puppet::Error, "Source file path must be fully qualified, not '#{value}'"
       end
