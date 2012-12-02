@@ -49,7 +49,3 @@ Load in a packagelist file, purging anything not mentioned within it:
 
 Pass in a packagelist loaded from somewhere else:
     packagelist { 'mypackagelist': packages => $packages }
-
-Limitations
-===========
-1) Inability to pass unversioned packages with the "purge" option set to true
