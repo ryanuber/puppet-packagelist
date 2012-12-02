@@ -58,6 +58,10 @@ Puppet::Type.newtype(:packagelist) do
     1) Inability to pass plain package names (without version/arch/release etc) with the \"purge\" option
     2) Only RPM-based operating systems are supported at this time."
 
+  def self.title_patterns
+    [ [ /^(.*?)\/*\Z/m, [ [ :source ] ] ] ]
+  end
+
   newparam(:purge, :boolean => true) do
     newvalues(:true, :false)
     defaultto :false
@@ -65,14 +69,11 @@ Puppet::Type.newtype(:packagelist) do
 
   newparam(:source) do
     isnamevar
-    #validate do |value| 
-      #unless Puppet::Util.absolute_path?(value)
-      #  fail Puppet::Error, "File paths must be fully qualified, not '#{value}'"
-      #end     
-      #unless File.exists?(:source)
-      #  fail Puppet::Error, "File '#{value}' does not exist"
-      #end
-    #end
+    validate do
+      unless Puppet::Util.absolute_path?(value)
+        fail Puppet::Error, "Source file path must be fully qualified, not '#{value}'"
+      end
+    end
     munge do |value|
       ::File.expand_path(value)
     end
@@ -87,6 +88,15 @@ Puppet::Type.newtype(:packagelist) do
     munge do |value|
       value
     end
+  end
+
+  validate do
+    creator_count = 0
+    creators = [:source, :packages]
+    creators.each do |param|
+      creator_count += 1 if self.value(param)
+    end
+    self.fail "You cannot specify more than one of #{creators.collect { |p| p.to_s}.join(", ")}" if creator_count > 1
   end
 
   def generate
