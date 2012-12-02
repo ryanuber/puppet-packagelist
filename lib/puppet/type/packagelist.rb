@@ -95,16 +95,22 @@ Puppet::Type.newtype(:packagelist) do
     elsif self.value(:source) != nil
       packages = File.read(self.value(:source)).split("\n")
     end
-    result = add_packages(packages)
-    result << purge_packages(provider.get_purge_list(packages)) if self.value(:purge)
+    result = []
+    add_packages(packages).each do |package|
+      result << package
+    end
+    if self.value(:purge)
+      purge_packages(provider.get_purge_list(packages)).each do |package|
+        result << package
+      end
+    end
     result
   end
 
   def add_packages(packages)
     result = []
     packages.each do |package|
-      r = Puppet::Resource.new(:package, package, :parameters => {:ensure => :installed})
-      result << r
+      result << Puppet::Type.type(:package).new(:name => package, :ensure => :latest)
     end
     result
   end
@@ -112,8 +118,7 @@ Puppet::Type.newtype(:packagelist) do
   def purge_packages(packages)
     result = []
     packages.each do |package|
-      r = Puppet::Resource.new(:package, package, :parameters => {:ensure => :installed})
-      result << r
+      result << Puppet::Type.type(:package).new(:name => package, :ensure => :absent)
     end
     result
   end
