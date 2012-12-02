@@ -32,15 +32,15 @@ Puppet::Type.newtype(:packagelist) do
 
     Options
     =======
-    source
+    ### source
     Defines the path to a package list file. This option can be passed as the
     resource name as well. This argument conflicts with the packages argument.
 
-    packages
+    ### packages
     A package list to pass directly in. This argument conflicts with the
     source argument.
 
-    purge
+    ### purge
     Whether or not to purge packages that are not present in the package list.
 
     Creating package lists
@@ -60,7 +60,7 @@ Puppet::Type.newtype(:packagelist) do
     packagelist { 'mypackagelist': packages => [ 'kernel', 'grub' ] }
 
     Keep kernel at a specific version, grub at latest, don't purge:
-    packagelist { 'mypackagelist': packages => [ 'kernel-2.6.32-279.el6.x86_64', 'grub' ]
+    packagelist { 'mypackagelist': packages => [ 'kernel-2.6.32-279.el6.x86_64', 'grub' ] }
 
     Load in a packagelist from a list file (one package per line):
     packagelist { '/root/my-packages.lst': }
@@ -138,7 +138,7 @@ Puppet::Type.newtype(:packagelist) do
     add_packages(packages).each do |package|
       result << package
     end
-    if self.value(:purge)
+    if purge?
       purge_packages(provider.get_purge_list(packages)).each do |package|
         result << package
       end

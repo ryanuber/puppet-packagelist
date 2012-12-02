@@ -1,58 +1,55 @@
-Puppet Package Lists
-====================
+Dynamcially creates a package resource for each element in a list, and
+ensures that each version is enforced. Any package not defined in your
+package list will automatically generate a package resource with an
+ensure => absent, giving you the power to define exactly what you want
+on your system in one list and enforce it using Puppet.
 
-apply_package_list
-------------------
-Dynamcially creates a package resource for each element in a list
-and ensures that each version is enforced. Any package not
-defined in your package list will automatically generate a package
-resource with an ensure => absent, giving you the power to define
-exactly what you want on your system in one list and enforce it using
-Puppet.
+For each package in a package list, an ensure will be dynamically created
+to "latest". This allows you to either place an exact package version in
+(along with the name), or simply the package name if you want the latest
+from your mirror.
 
-### Basic Syntax
+Options
+=======
+### source
+Defines the path to a package list file. This option can be passed as the
+resource name as well. This argument conflicts with the packages argument.
 
-    apply_package_list('/path/to/list/file', '[purge=nopurge]')
+### packages
+A package list to pass directly in. This argument conflicts with the
+source argument.
 
-The purge option determines whether or not to purge packages that do not
-appear in your package set. It defaults to nopurge.
+### purge
+Whether or not to purge packages that are not present in the package list.
 
-You need to feed in one list containing a structure of package data.
-A list can be created on a live machine using the following command:
-
-    rpm -qa > /path/to/list_file.txt
-
-Examples of content possibilities follow.
+Creating package lists
+======================
+An easy way to create a package list for an entire system is using RPM
+directly. Examples follow.
 
 With versions:
+rpm -qa > my-packages.lst
 
-    avahi-libs-0.6.25-11.el6.i686
-    augeas-libs-0.9.0-4.el6.i686
-    dhcp-common-4.1.1-31.P1.el6_3.1.i686
-    pulseaudio-utils-0.9.21-13.el6.i686
-    ...
-    ...
+Without versions (to get latest):
+rpm -qa --qf="%{name}\n" > my-packages.lst
 
-Without versions:
+Examples
+========
+Keep kernel and grub at latest, don't purge other packages:
+    packagelist { 'mypackagelist': packages => [ 'kernel', 'grub' ] }
 
-    avahi-libs
-    augeas-libs
-    dhcp-common
-    pulseaudio
+Keep kernel at a specific version, grub at latest, don't purge:
+    packagelist { 'mypackagelist': packages => [ 'kernel-2.6.32-279.el6.x86_64', 'grub' ]
 
-Combination:
+Load in a packagelist from a list file (one package per line):
+    packagelist { '/root/my-packages.lst': }
 
-    avahi-libs-0.6.25-11.el6.i686
-    augeas-libs-0.9.0-4.el6.i686
-    dhcp-common
-    pulseaudio-utils
+Load in a packagelist file, purging anything not mentioned within it:
+    packagelist { '/root/my-packages.lst': purge => true }
 
-This would ensure that the listed packages were installed and were at
-their associated version numbers. If no version number is specified,
-the package would be installed from the latest version available in
-your system's configured repositories.
+Pass in a packagelist loaded from somewhere else:
+    packagelist { 'mypackagelist': packages => $packages }
 
-### Limitations
-
-* Inability to pass plain package names (without version/arch/release etc) with the "purge" option
-* Only RPM-based operating systems are supported at this time.
+Limitations
+===========
+1) Inability to pass unversioned packages with the "purge" option set to true
