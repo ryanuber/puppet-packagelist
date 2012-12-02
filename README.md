@@ -33,6 +33,7 @@ An easy way to create a package list for an entire system is using RPM
 directly. Examples follow.
 
 With versions:
+
     rpm -qa > my-packages.lst
 
 Without versions (to get latest):
