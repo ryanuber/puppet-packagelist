@@ -75,12 +75,12 @@ from your mirror."
     desc "A packagelist. This is a simple list containing package strings. You
     cannot use this argument in conjunction with the 'source' argument."
     validate do |value|
-      unless value.kind_of?(Array)
-        raise ArgumentError, "Supplied package list is not an array"
+      unless value.kind_of?(Array) or value.kind_of?(String)
+        raise ArgumentError, "Package list must be string or array"
       end
     end
     munge do |value|
-      value
+      value.kind_of?(String) ? [value] : value
     end
   end
 
