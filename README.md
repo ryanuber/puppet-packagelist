@@ -26,6 +26,13 @@ source argument.
 ### purge
 Whether or not to purge packages that are not present in the package list.
 
+Debian Support
+---------------
+
+Basic Debian-based OS families are supported as of 0.2.2. The package list format
+is a little different than RedHat's, but the tools and commands used are quite
+similar in nature.
+
 Creating package lists
 ----------------------
 
@@ -34,30 +41,44 @@ directly. Examples follow.
 
 With versions:
 
-    rpm -qa > my-packages.lst
+    # RedHat
+    rpm -qa > my-packages-redhat.lst
+    # Debian
+    dpkg-query --show > my-packages-debian.lst
 
 Without versions (to get latest):
 
-    rpm -qa --qf="%{name}\n" > my-packages.lst
+    # RedHat
+    rpm -qa --qf="%{name}\n" > my-packages-redhat.lst
+    # Debian
+    dpkg-query --show -f '${Package}\n' > my-packages-debian.lst
 
 Examples
 --------
+
 Keep kernel and grub at latest, don't purge other packages:
 
+    # RedHat / Debian
     packagelist { 'mypackagelist': packages => [ 'kernel', 'grub' ] }
 
 Keep kernel at a specific version, grub at latest, don't purge:
 
+    # RedHat
     packagelist { 'mypackagelist': packages => [ 'kernel-2.6.32-279.el6.x86_64', 'grub' ]
+    # Debian
+    packagelist { 'mypackagelist': packages => [ 'linux-image-generic 3.5.0.17.19', 'grub-common' ]
 
 Load in a packagelist from a list file (one package per line):
 
+    # RedHat / Debian
     packagelist { '/root/my-packages.lst': }
 
 Load in a packagelist file, purging anything not mentioned within it:
 
+    # RedHat / Debian
     packagelist { '/root/my-packages.lst': purge => true }
 
 Pass in a packagelist loaded from somewhere else:
 
+    # RedHat / Debian
     packagelist { 'mypackagelist': packages => $packages }
