@@ -104,6 +104,7 @@ from your mirror."
       result << package
     end
     if purge?
+      Puppet.debug("Purge requested on packagelist '#{self.value(:name)}'")
       purge_packages(provider.get_purge_list(packages)).each do |package|
         result << package
       end
@@ -118,6 +119,7 @@ from your mirror."
       version = provider.get_package_version(package)
       result << Puppet::Type.type(:package).new(:name => name, :ensure => version)
     end
+    Puppet.debug("Adding #{result.count} package resources from package list")
     result
   end
 
@@ -127,6 +129,7 @@ from your mirror."
       name = provider.get_package_name(package)
       result << Puppet::Type.type(:package).new(:name => name, :ensure => :absent)
     end
+    Puppet.debug("Found #{result.count} packages that need to be purged")
     result
   end
 

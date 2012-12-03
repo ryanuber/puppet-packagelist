@@ -56,12 +56,25 @@ Puppet::Type.type(:packagelist).provide :redhat do
     installed.each do |package|
       # In RHEL, GPG keys show up in this output, so skip them (we really don't want
       # to uninstall imported GPG keys)
-      next if package.start_with?('gpg-pubkey')
+      if package.start_with?('gpg-pubkey')
+        Puppet.debug("Not purging gpg-pubkey package '#{package}'")
+        next
+      end
 
       # Account for packages specified by name-only in the package list
-      next if allowed_packages.include?(%x(rpm -q --qf "%{name}" #{package}))
+      name = get_package_name(package)
+      if allowed_packages.include?(name)
+        Puppet.debug("Not purging '#{package}' because '#{name}' found in package list")
+        next
+      end
 
-      result << package if not allowed_packages.include?(package)
+      if allowed_packages.include?(package)
+        Puppet.debug("Not purging '#{package}' because present in package list")
+        next
+      end
+
+      Puppet.debug("Adding package '#{package}' to purge list")
+      result << package
     end
     result
   end

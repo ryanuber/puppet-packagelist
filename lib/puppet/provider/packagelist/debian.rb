@@ -51,16 +51,24 @@ Puppet::Type.type(:packagelist).provide :debian do
     result = []
     installed = %x(dpkg-query --show).split("\n")
     if installed == nil 
-      fail Puppet::Error, "Could not query local RPM database"
+      fail Puppet::Error, "Could not query local dpkg database"
     end 
     installed.each do |package|
       name = get_package_name(package)
       version = get_package_version(package)
 
       # Account for packages specified by name-only in the package list
-      next if allowed_packages.include?(name)
+      if allowed_packages.include?(name)
+        Puppet.debug("Not purging '#{package}' because '#{name}' found in package list")
+        next
+      end
 
-      next if allowed_packages.collect { |p| p.gsub(/\s+/, ' ') }.include?("#{name} #{version}")
+      if allowed_packages.collect { |p| p.gsub(/\s+/, ' ') }.include?("#{name} #{version}")
+        Puppet.debug("Not purging '#{name} #{version}' because present in package list")
+        next
+      end
+
+      Puppet.debug("Adding package '#{name}' to purge list")
       result << package
     end
     result
