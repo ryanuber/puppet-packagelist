@@ -31,7 +31,8 @@ Debian Support
 
 Basic Debian-based OS families are supported as of 0.2.2. The package list format
 is a little different than RedHat's, but the tools and commands used are quite
-similar in nature.
+similar in nature. The key difference is the delimiter between package name and
+version.
 
 Creating package lists
 ----------------------
@@ -58,15 +59,17 @@ Examples
 
 Keep kernel and grub at latest, don't purge other packages:
 
-    # RedHat / Debian
+    # RedHat
     packagelist { 'mypackagelist': packages => [ 'kernel', 'grub' ] }
+    # Debian
+    packagelist { 'mypackagelist': packages => [ 'linux-image-generic', 'grub-common' ] }
 
 Keep kernel at a specific version, grub at latest, don't purge:
 
     # RedHat
-    packagelist { 'mypackagelist': packages => [ 'kernel-2.6.32-279.el6.x86_64', 'grub' ]
+    packagelist { 'mypackagelist': packages => [ 'kernel-2.6.32-279.el6.x86_64', 'grub' ] }
     # Debian
-    packagelist { 'mypackagelist': packages => [ 'linux-image-generic 3.5.0.17.19', 'grub-common' ]
+    packagelist { 'mypackagelist': packages => [ 'linux-image-generic 3.5.0.17.19', 'grub-common' ] }
 
 Load in a packagelist from a list file (one package per line):
 
