@@ -114,7 +114,9 @@ from your mirror."
   def add_packages(packages)
     result = []
     packages.each do |package|
-      result << Puppet::Type.type(:package).new(:name => package, :ensure => :latest)
+      name = provider.get_package_name(package)
+      version = provider.get_package_version(package)
+      result << Puppet::Type.type(:package).new(:name => name, :ensure => version)
     end
     result
   end
@@ -122,7 +124,8 @@ from your mirror."
   def purge_packages(packages)
     result = []
     packages.each do |package|
-      result << Puppet::Type.type(:package).new(:name => package, :ensure => :absent)
+      name = provider.get_package_name(package)
+      result << Puppet::Type.type(:package).new(:name => name, :ensure => :absent)
     end
     result
   end
