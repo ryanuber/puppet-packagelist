@@ -26,13 +26,19 @@ source argument.
 ### purge
 Whether or not to purge packages that are not present in the package list.
 
+RedHat Support
+--------------
+
+RedHat OS family support is relatively sound and straightforward, and is the
+distribution this module was originally written for.
+
 Debian Support
 ---------------
 
-Basic Debian-based OS families are supported as of 0.2.2. The package list format
-is a little different than RedHat's, but the tools and commands used are quite
-similar in nature. The key difference is the delimiter between package name and
-version.
+Debian-based OS families are supported as of 0.2.2. The package list format
+is a little different than RedHat's, but the tools and commands used are
+quite similar in nature. The key difference is the delimiter between package
+name and version.
 
 Creating package lists
 ----------------------

@@ -27,6 +27,8 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+require 'puppet/type'
+
 Puppet::Type.newtype(:packagelist) do
   @doc = "
 Dynamcially creates a package resource for each element in a list, and

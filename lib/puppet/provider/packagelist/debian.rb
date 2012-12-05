@@ -3,8 +3,6 @@
 # @author     Ryan Uber <ru@ryanuber.com>
 # @link       https://github.com/ryanuber/puppet-packagelist
 # @license    http://opensource.org/licenses/MIT
-# @category   modules
-# @package    packagelist
 #
 # MIT LICENSE
 #
@@ -26,6 +24,9 @@
 # LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+require 'puppet/provider'
+require 'puppet/util/execution'
 
 Puppet::Type.type(:packagelist).provide :debian do
   confine :osfamily => :debian
@@ -49,9 +50,10 @@ Puppet::Type.type(:packagelist).provide :debian do
 
   def get_purge_list(allowed_packages)
     result = []
-    installed = %x(dpkg-query --show).split("\n")
+    installed = Puppet::Util::Execution.execute('dpkg-query --show', :failonfail => true,
+      :combine => false).split("\n")
     if installed == nil 
-      fail Puppet::Error, "Could not query local dpkg database"
+      fail Puppet::Error, "Got 0-length list of installed packages from dpkg-query"
     end 
     installed.each do |package|
       name = get_package_name(package)
@@ -63,6 +65,7 @@ Puppet::Type.type(:packagelist).provide :debian do
         next
       end
 
+      # Skip if exact package version is in package list
       if allowed_packages.collect { |p| p.gsub(/\s+/, ' ') }.include?("#{name} #{version}")
         Puppet.debug("Not purging '#{name} #{version}' because present in package list")
         next
