@@ -1,6 +1,6 @@
 # puppet-packagelist - Dynamically create package resources from lists
 #
-# @author     Ryan Uber <ryuber@cisco.com>
+# @author     Ryan Uber <ru@ryanuber.com>
 # @link       https://github.com/ryanuber/puppet-packagelist
 # @license    http://opensource.org/licenses/MIT
 # @category   modules

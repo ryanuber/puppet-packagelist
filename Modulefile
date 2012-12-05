@@ -1,7 +1,7 @@
 name         'ryanuber-packagelist'
 version      '0.2.3'
 source       'git://github.com/ryanuber/puppet-packagelist'
-author       'Ryan Uber'
+author       'Ryan Uber <ru@ryanuber.com>'
 license      'MIT'
 summary      'Package List'
 description  'Dynamically create package resources from lists'
