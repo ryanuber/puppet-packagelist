@@ -12,6 +12,17 @@ to "latest". This allows you to either place an exact package version in
 (along with the name), or simply the package name if you want the latest
 from your mirror.
 
+Installation
+------------
+
+Install via PuppetForge:
+
+    puppet module install ryanuber/packagelist
+
+Install via git:
+
+    git clone git://github.com/ryanuber/puppet-packagelist /etc/puppet/modules/packagelist
+
 Options
 -------
 
