@@ -35,16 +35,18 @@ Puppet::Type.type(:packagelist).provide :redhat do
   defaultfor :osfamily => :redhat
 
   def get_package_name(package)
-    if re = /^(.+)-([^-]+)-([^-]+)\.(\w+)\Z/.match(package)
-      re.captures[0]
+    case package
+    when /^(.+)-\d+[^-]*-\d+[^-]*/, /^(.+)-\d+[^-]*/, /^(.+)\Z/
+      $1
     else
       package
     end
   end
 
   def get_package_version(package)
-    if re = /^(.+)-([^-]+)-([^-]+)\.(\w+)\Z/.match(package)
-      sprintf('%s-%s', re.captures[1], re.captures[2])
+    case package
+    when /^.+-(\d+[^-]*-\d+[^-]*)/, /^.+-(\d+[^-]*)-/, /^.+-(\d+[^-]*)\Z/
+      $1
     else
       "latest"
     end
