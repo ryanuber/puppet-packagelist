@@ -129,7 +129,7 @@ from your mirror."
     result = []
     packages.each do |package|
       name = provider.get_package_name(package)
-      result << Puppet::Type.type(:package).new(:name => name, :ensure => :absent)
+      result << Puppet::Type.type(:package).new(:name => name, :ensure => :purged)
     end
     Puppet.debug("Found #{result.count} packages that need to be purged")
     result
