@@ -58,7 +58,10 @@ Puppet::Type.type(:packagelist).provide :redhat do
 
       # Because of puppet bug #1720, we need to rewrite the kernel
       # package name into name-version format.
-      name = "#{name}-#{version}" if name == 'kernel'
+      if name == 'kernel' and version != 'latest'
+        name = "#{name}-#{version}"
+        version = 'installed'
+      end
 
       result[name] = version
     end
