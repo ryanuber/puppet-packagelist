@@ -48,6 +48,16 @@ Puppet::Type.type(:packagelist).provide :debian do
     end
   end
 
+  def get_packages_list(packages)
+    result = {}
+    packages.each do |package|
+      name = get_package_name(package)
+      version = get_package_version(package)
+      result[name] = version
+    end
+    result
+  end
+
   def get_purge_list(allowed_packages)
     result = []
     installed = Puppet::Util::Execution.execute('dpkg-query --show', :failonfail => true,

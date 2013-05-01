@@ -50,6 +50,21 @@ Puppet::Type.type(:packagelist).provide :redhat do
     end
   end
 
+  def get_packages_list(packages)
+    result = {}
+    packages.each do |package|
+      name = get_package_name(package)
+      version = get_package_version(package)
+
+      # Because of puppet bug #1720, we need to rewrite the kernel
+      # package name into name-version format.
+      name = "#{name}-#{version}" if name == 'kernel'
+
+      result[name] = version
+    end
+    result
+  end
+
   def get_purge_list(allowed_packages)
     result = []
     installed = Puppet::Util::Execution.execute('rpm -qa', :failonfail => true,

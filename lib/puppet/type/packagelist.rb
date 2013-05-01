@@ -116,9 +116,7 @@ from your mirror."
 
   def add_packages(packages)
     result = []
-    packages.each do |package|
-      name = provider.get_package_name(package)
-      version = provider.get_package_version(package)
+    provider.get_packages_list(packages).each do |name, version|
       result << Puppet::Type.type(:package).new(:name => name, :ensure => version)
     end
     Puppet.debug("Adding #{result.count} package resources from package list")
