@@ -95,16 +95,13 @@ from your mirror."
     self.fail "You cannot specify more than one of #{creators.collect { |p| p.to_s}.join(", ")}" if creator_count > 1
   end
 
-  def generate
+  def eval_generate
     if self.value(:packages)
       packages = self.value(:packages)
     elsif self.value(:source)
       packages = File.read(self.value(:source)).split("\n")
     end
-    result = []
-    add_packages(packages).each do |package|
-      result << package
-    end
+    result = add_packages(packages)
     if purge?
       Puppet.debug("Purge requested on packagelist '#{self.value(:name)}'")
       purge_packages(provider.get_purge_list(packages)).each do |package|
