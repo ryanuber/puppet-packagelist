@@ -34,6 +34,8 @@ Puppet::Type.type(:packagelist).provide :redhat do
   confine :osfamily => :redhat
   defaultfor :osfamily => :redhat
 
+  commands :yum => "yum"
+
   def get_package_name(package)
     if re = /^(.+)-([^-]+)-([^-]+)\.(\w+)\Z/.match(package)
       re.captures[0]
@@ -72,9 +74,9 @@ Puppet::Type.type(:packagelist).provide :redhat do
     result = []
     installed = Puppet::Util::Execution.execute('rpm -qa', :failonfail => true,
       :combine => false).split("\n")
-    if installed == nil 
+    if installed == nil
       fail Puppet::Error, "Could not query local RPM database"
-    end 
+    end
     installed.each do |package|
       # In RHEL, GPG keys show up in this output, so skip them (we really don't want
       # to uninstall imported GPG keys)
@@ -101,4 +103,20 @@ Puppet::Type.type(:packagelist).provide :redhat do
     result
   end
 
+  def verify_package(package)
+    errors = Array(Puppet::Util::Execution.execute("rpm -V #{package}", :failonfail => false))
+    errors.each do |error|
+      errors.delete(error) if error.split[1] == 'c'
+    end
+    return errors.length == 0
+  end
+
+  def reinstall_package(package)
+    Puppet.notice "Package verification for #{package} failed, reinstalling"
+    begin
+      yum "-d", "0", "-e", "0", "-y", "reinstall", package
+    rescue Puppet::ExecutionFailure
+      fail Puppet::Error, "Failed to reinstall package #{package}"
+    end
+  end
 end

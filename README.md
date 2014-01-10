@@ -37,6 +37,12 @@ source argument.
 ### purge
 Whether or not to purge packages that are not present in the package list.
 
+### verify
+If true, verifies all packages in the packagelist. If a package does not verify
+cleanly, it is automatically reinstalled. Defaults to false. Note: Currently
+this option is only usable in the RedHat provider. Debian support might be
+added later using `debsums` or similar.
+
 RedHat Support
 --------------
 

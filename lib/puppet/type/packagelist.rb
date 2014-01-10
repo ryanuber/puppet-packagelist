@@ -59,6 +59,10 @@ from your mirror."
     isnamevar
   end
 
+  newparam(:refresh) do
+    desc "Refresh this teller"
+  end
+
   newparam(:source) do
     desc "The path to a package list. This can be passed as a parameter or as
     the resource identifier. It must contain a fully-qualified path. You cannot
@@ -86,6 +90,18 @@ from your mirror."
     end
   end
 
+  newparam(:verify, :boolean => false) do
+    desc "Verify all packages in the packagelist using rpm verify. If a package
+    fails to verify, it will be automatically reinstalled."
+    newvalues(:true, :false)
+    defaultto :false
+    validate do |value|
+      if provider.class.name.to_s != 'redhat'
+        raise ArgumentError, '"verify" is only supported on RedHat platforms'
+      end
+    end
+  end
+
   validate do
     creator_count = 0
     creators = [:source, :packages]
@@ -106,6 +122,11 @@ from your mirror."
       Puppet.debug("Purge requested on packagelist '#{self.value(:name)}'")
       purge_packages(provider.get_purge_list(packages)).each do |package|
         result << package
+      end
+    end
+    if self.value(:verify) == true
+      packages.each do |package|
+        provider.reinstall_package(package) if not provider.verify_package(package)
       end
     end
     result
