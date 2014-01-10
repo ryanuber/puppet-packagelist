@@ -90,7 +90,7 @@ from your mirror."
     end
   end
 
-  newparam(:verify, :boolean => false) do
+  newparam(:verify, :boolean => true) do
     desc "Verify all packages in the packagelist using rpm verify. If a package
     fails to verify, it will be automatically reinstalled."
     newvalues(:true, :false)
@@ -124,10 +124,9 @@ from your mirror."
         result << package
       end
     end
-    if self.value(:verify) == true
-      packages.each do |package|
-        provider.reinstall_package(package) if not provider.verify_package(package)
-      end
+    if verify?
+      Puppet.debug("Verify requested on packagelist '#{self.value(:name)}'")
+      provider.reinstall_packages(provider.get_verify_failed_packages(packages))
     end
     result
   end

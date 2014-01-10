@@ -103,12 +103,26 @@ Puppet::Type.type(:packagelist).provide :redhat do
     result
   end
 
+  def get_verify_failed_packages(packages)
+    result = []
+    packages.each do |package|
+      result << package if not verify_package(package)
+    end
+    result
+  end
+
   def verify_package(package)
     errors = Array(Puppet::Util::Execution.execute("rpm -V #{package}", :failonfail => false))
     errors.each do |error|
       errors.delete(error) if error.split[1] == 'c'
     end
     return errors.length == 0
+  end
+
+  def reinstall_packages(packages)
+    packages.each do |package|
+      reinstall_package(package)
+    end
   end
 
   def reinstall_package(package)
