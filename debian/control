@@ -1,0 +1,19 @@
+Source: puppet-packagelist
+Maintainer: Ryan Uber <ru@ryanuber.com>
+Section: admin
+Priority: optional
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 9)
+
+Package: puppet-packagelist
+Architecture: all
+Depends: puppet, ${shlibs:Depends}, ${misc:Depends}
+Description: Dynamically create package resources from lists
+ Dynamcially creates a package resource for each element in a list, and ensures
+ that each version is enforced. Any package not defined in your package list
+ will automatically generate a package resource with an ensure => absent, giving
+ you the power to define exactly what you want on your system in one list and
+ enforce it using Puppet. For each package in a package list, an ensure will be
+ dynamically created to "latest". This allows you to either place an exact
+ package version in (along with the name), or simply the package name if you
+ want the latest from your mirror.

@@ -1,0 +1,5 @@
+puppet-packagelist (0.2.7) stable; urgency=low
+
+  * Initial deb release.
+
+ -- Ryan Uber <ru@ryanuber.com>  Thu, 09 Jan 2014 22:35:17 -0800
