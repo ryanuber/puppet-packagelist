@@ -66,6 +66,10 @@ from your mirror."
     self.fail "You cannot specify more than one of #{creators.collect { |p| p.to_s}.join(", ")}" if creator_count > 1
   end
 
+  def debug(message)
+    Puppet.debug "packagelist[#{self.value(:name)}]: #{message}"
+  end
+
   def eval_generate
     if self.value(:packages)
       packages = self.value(:packages)
@@ -74,20 +78,21 @@ from your mirror."
     end
     result = add_packages(packages)
     if purge?
-      Puppet.debug("Purge requested on packagelist '#{self.value(:name)}'")
       purge_packages(provider.get_purge_list(packages)).each do |package|
         result << package
       end
     end
+    debug "purging #{result.count} package resources"
     result
   end
 
   def add_packages(packages)
     result = []
     provider.get_packages_list(packages).each do |name, version|
+      debug "ensuring #{name} => #{version}"
       result << Puppet::Type.type(:package).new(:name => name, :ensure => version)
     end
-    Puppet.debug("Adding #{result.count} package resources from package list")
+    debug "adding #{result.count} package resources"
     result
   end
 
@@ -95,9 +100,10 @@ from your mirror."
     result = []
     packages.each do |package|
       name = provider.get_package_name(package)
+      debug "ensuring #{name} => purged"
       result << Puppet::Type.type(:package).new(:name => name, :ensure => :purged)
     end
-    Puppet.debug("Found #{result.count} packages that need to be purged")
+    debug "purging #{result.count} total packages"
     result
   end
 
