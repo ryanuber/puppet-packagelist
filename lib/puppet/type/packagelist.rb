@@ -36,7 +36,7 @@ from your mirror."
     use this argument in conjunction with the 'packages' argument."
     validate do |value|
       unless Puppet::Util.absolute_path?(value)
-        fail Puppet::Error, "Source file path must be fully qualified, not '#{value}'"
+        self.fail "Source file path must be fully qualified, not '#{value}'"
       end
     end
     munge do |value|
@@ -49,7 +49,7 @@ from your mirror."
     cannot use this argument in conjunction with the 'source' argument."
     validate do |value|
       unless value.kind_of?(Array) or value.kind_of?(String)
-        raise ArgumentError, "Package list must be string or array"
+        self.fail "packagelist must be string or array"
       end
     end
     munge do |value|
@@ -66,10 +66,6 @@ from your mirror."
     self.fail "You cannot specify more than one of #{creators.collect { |p| p.to_s}.join(", ")}" if creator_count > 1
   end
 
-  def debug(message)
-    Puppet.debug "packagelist[#{self.value(:name)}]: #{message}"
-  end
-
   def eval_generate
     if self.value(:packages)
       packages = self.value(:packages)
@@ -82,17 +78,16 @@ from your mirror."
         result << package
       end
     end
-    debug "purging #{result.count} package resources"
     result
   end
 
   def add_packages(packages)
     result = []
     provider.get_packages_list(packages).each do |name, version|
-      debug "ensuring #{name} => #{version}"
+      self.debug "ensuring #{name} => #{version}"
       result << Puppet::Type.type(:package).new(:name => name, :ensure => version)
     end
-    debug "adding #{result.count} package resources"
+    self.debug "adding #{result.count} package resources"
     result
   end
 
@@ -100,10 +95,10 @@ from your mirror."
     result = []
     packages.each do |package|
       name = provider.get_package_name(package)
-      debug "ensuring #{name} => purged"
+      self.debug "ensuring #{name} => purged"
       result << Puppet::Type.type(:package).new(:name => name, :ensure => :purged)
     end
-    debug "purging #{result.count} total packages"
+    self.debug "purging #{result.count} total packages"
     result
   end
 

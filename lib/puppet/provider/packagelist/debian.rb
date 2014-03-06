@@ -35,26 +35,25 @@ Puppet::Type.type(:packagelist).provide :debian do
     result = []
     installed = Puppet::Util::Execution.execute('dpkg-query --show', :failonfail => true,
       :combine => false).split("\n")
-    if installed == nil 
-      fail Puppet::Error, "Got 0-length list of installed packages from dpkg-query"
-    end 
+    if installed == nil
+      self.fail "Got 0-length list of installed packages from dpkg-query"
+    end
     installed.each do |package|
       name = get_package_name(package)
       version = get_package_version(package)
 
       # Account for packages specified by name-only in the package list
       if allowed_packages.include?(name)
-        Puppet.debug("Not purging '#{package}' because '#{name}' found in package list")
+        self.debug "not purging '#{package}' because '#{name}' found in package list"
         next
       end
 
       # Skip if exact package version is in package list
       if allowed_packages.collect { |p| p.gsub(/\s+/, ' ') }.include?("#{name} #{version}")
-        Puppet.debug("Not purging '#{name} #{version}' because present in package list")
+        self.debug "not purging '#{name} #{version}' because present in package list"
         next
       end
 
-      Puppet.debug("Adding package '#{name}' to purge list")
       result << package
     end
     result

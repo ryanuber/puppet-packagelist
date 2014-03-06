@@ -43,30 +43,29 @@ Puppet::Type.type(:packagelist).provide :redhat do
     result = []
     installed = Puppet::Util::Execution.execute('rpm -qa', :failonfail => true,
       :combine => false).split("\n")
-    if installed == nil 
-      fail Puppet::Error, "Could not query local RPM database"
-    end 
+    if installed == nil
+      self.fail "Could not query local RPM database"
+    end
     installed.each do |package|
       # In RHEL, GPG keys show up in this output, so skip them (we really don't want
       # to uninstall imported GPG keys)
-      if package.start_with?('gpg-pubkey')
-        Puppet.debug("Not purging gpg-pubkey package '#{package}'")
+      if package.start_with? 'gpg-pubkey-'
+        self.debug "not purging gpg-pubkey package #{package}"
         next
       end
 
       # Account for packages specified by name-only in the package list
       name = get_package_name(package)
       if allowed_packages.include?(name)
-        Puppet.debug("Not purging '#{package}' because '#{name}' found in package list")
+        self.debug "not purging #{package} because #{name} found in package list"
         next
       end
 
       if allowed_packages.include?(package)
-        Puppet.debug("Not purging '#{package}' because present in package list")
+        self.debug "not purging #{package} because present in package list"
         next
       end
 
-      Puppet.debug("Adding package '#{package}' to purge list")
       result << package
     end
     result
