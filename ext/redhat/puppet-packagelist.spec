@@ -3,7 +3,7 @@
 
 name: puppet-packagelist
 summary: Dynamically create package resources from lists
-version: 0.2.7
+version: 0.2.8
 release: 1%{?dist}
 buildarch: noarch
 license: MIT

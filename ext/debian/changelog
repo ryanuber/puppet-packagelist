@@ -1,3 +1,9 @@
+puppet-packagelist (0.2.8) stable; urgency=low
+
+  * Added logging enhancements
+
+ -- Ryan Uber <ru@ryanuber.com>  Wed, 5 Mar 2014 23:29:27 -0800
+
 puppet-packagelist (0.2.7) stable; urgency=low
 
   * Initial deb release.
