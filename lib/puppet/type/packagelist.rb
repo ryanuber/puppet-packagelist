@@ -36,7 +36,7 @@ from your mirror."
     use this argument in conjunction with the 'packages' argument."
     validate do |value|
       unless Puppet::Util.absolute_path?(value)
-        fail Puppet::Error, "Source file path must be fully qualified, not '#{value}'"
+        self.fail "Source file path must be fully qualified, not '#{value}'"
       end
     end
     munge do |value|
@@ -49,7 +49,7 @@ from your mirror."
     cannot use this argument in conjunction with the 'source' argument."
     validate do |value|
       unless value.kind_of?(Array) or value.kind_of?(String)
-        raise ArgumentError, "Package list must be string or array"
+        self.fail "packagelist must be string or array"
       end
     end
     munge do |value|
@@ -74,7 +74,6 @@ from your mirror."
     end
     result = add_packages(packages)
     if purge?
-      Puppet.debug("Purge requested on packagelist '#{self.value(:name)}'")
       purge_packages(provider.get_purge_list(packages)).each do |package|
         result << package
       end
@@ -85,9 +84,10 @@ from your mirror."
   def add_packages(packages)
     result = []
     provider.get_packages_list(packages).each do |name, version|
+      self.debug "ensuring #{name} => #{version}"
       result << Puppet::Type.type(:package).new(:name => name, :ensure => version)
     end
-    Puppet.debug("Adding #{result.count} package resources from package list")
+    self.debug "adding #{result.count} package resources"
     result
   end
 
@@ -95,9 +95,10 @@ from your mirror."
     result = []
     packages.each do |package|
       name = provider.get_package_name(package)
+      self.debug "ensuring #{name} => purged"
       result << Puppet::Type.type(:package).new(:name => name, :ensure => :purged)
     end
-    Puppet.debug("Found #{result.count} packages that need to be purged")
+    self.debug "purging #{result.count} total packages"
     result
   end
 
